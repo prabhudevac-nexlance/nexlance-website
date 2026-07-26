@@ -1638,6 +1638,10 @@ a.c-val:hover {
     gap: 1.5rem;
 }
 
+.inquiry-form button[type="submit"] {
+    align-self: flex-start;
+}
+
 .form-group-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
