@@ -3,44 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nexlance - Empowering Businesses Through People, Process & Performance. High-quality HR consulting, Recruitment, BPO, Collections & Recovery services.">
-    <title>Nexlance | Empowering Businesses Through People, Process & Performance</title>
-    <!-- Modern Fonts -->
+    <meta name="description" content="Nexlance is a Business Solutions Company with two core divisions — Nexlance Services (HR, BPO, Collections) and Nexlance Products (AI-powered SaaS). Empowering businesses through People, Process & Performance.">
+    <meta name="keywords" content="Nexlance, Business Solutions, HR Solutions, BPO Services, Collections, NexScore, Workforce Solutions, Staffing, Payroll">
+    <meta property="og:title" content="Nexlance | Empowering Businesses Through People, Process & Performance">
+    <meta property="og:description" content="Nexlance is a Business Solutions Company helping organizations build high-performing teams, streamline operations, and drive growth.">
+    <title>Nexlance | Business Solutions Company — Services & Products</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Premium Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Ambient Background Gradients -->
+    <!-- Ambient Background Glows -->
     <div class="ambient-glow bg-glow-1"></div>
     <div class="ambient-glow bg-glow-2"></div>
     <div class="ambient-glow bg-glow-3"></div>
 
-    <!-- Header / Navigation -->
-    <header class="header">
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header" id="header">
         <div class="container header-container">
-            <a href="#" class="logo-group" id="nav-logo">
+            <a href="#" class="logo-group">
                 <img src="assets/logo.png" alt="Nexlance Logo" class="logo-img">
                 <span class="logo-text">Nexlance</span>
             </a>
-            
+
             <nav class="nav-menu">
-                <a href="#about" class="nav-link">Who We Are</a>
-                <a href="#solutions" class="nav-link">Solutions</a>
-                <a href="#why-choose" class="nav-link">Why Nexlance</a>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <div class="nav-dropdown">
+                    <a href="#nexscore" class="nav-link nav-dropdown-trigger">
+                        Products <i class="fa-solid fa-chevron-down nav-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#nexscore" class="dropdown-item">
+                            <div class="dd-icon"><i class="fa-solid fa-rocket"></i></div>
+                            <div class="dd-content">
+                                <span class="dd-title">NexScore</span>
+                                <span class="dd-desc">AI-powered hiring platform</span>
+                            </div>
+                            <span class="dd-badge">Soon</span>
+                        </a>
+                    </div>
+                </div>
                 <a href="#industries" class="nav-link">Industries</a>
-                <a href="#approach" class="nav-link">Our Approach</a>
+                <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
             <div class="nav-actions">
                 <a href="#contact" class="btn btn-primary btn-sm">Schedule Consultation</a>
-                <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -49,107 +63,111 @@
         </div>
     </header>
 
-    <!-- Mobile Drawer Menu -->
-    <div class="mobile-drawer">
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
         <div class="mobile-drawer-header">
             <a href="#" class="logo-group">
                 <img src="assets/logo.png" alt="Nexlance Logo" class="logo-img">
                 <span class="logo-text">Nexlance</span>
             </a>
-            <button class="close-drawer" aria-label="Close Navigation">&times;</button>
+            <button class="close-drawer" id="close-drawer" aria-label="Close">&times;</button>
         </div>
         <nav class="mobile-nav">
-            <a href="#about" class="mobile-link">Who We Are</a>
-            <a href="#solutions" class="mobile-link">Solutions</a>
-            <a href="#why-choose" class="mobile-link">Why Nexlance</a>
+            <a href="#" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#nexscore" class="mobile-link">Products</a>
             <a href="#industries" class="mobile-link">Industries</a>
-            <a href="#approach" class="mobile-link">Our Approach</a>
             <a href="#contact" class="mobile-link">Contact</a>
-            <a href="#contact" class="btn btn-primary btn-full mobile-cta">Schedule Consultation</a>
+            <a href="#contact" class="btn btn-primary btn-full mt-md">Schedule Consultation</a>
         </nav>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="home">
         <div class="container hero-container">
             <div class="hero-content scroll-reveal fade-in-up">
                 <div class="badge-premium">
-                    <span class="badge-dot"></span> Integrated Business Solutions
+                    <span class="badge-dot"></span>
+                    Business Solutions Company
                 </div>
                 <h1 class="hero-title">
                     Empowering Businesses Through <span class="gradient-text text-animate">People, Process & Performance</span>
                 </h1>
                 <p class="hero-subtitle">
-                    At Nexlance, we believe every growing business deserves a partner that understands more than hiring. We help organizations build high-performing teams, strengthen workforce operations, streamline processes, and scale long-term growth.
+                    We help organizations build high-performing teams, streamline business operations, and drive long-term growth through integrated business solutions and technology.
                 </p>
                 <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary btn-lg">
-                        Let's Build Your Growth Story <i class="fa-solid fa-arrow-right icon-right"></i>
+                    <a href="#services" class="btn btn-primary btn-lg">
+                        Explore Our Services <i class="fa-solid fa-arrow-right icon-right"></i>
                     </a>
-                    <a href="#solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
+                    <a href="#nexscore" class="btn btn-secondary btn-lg">
+                        <i class="fa-solid fa-rocket"></i> Discover Our Products
+                    </a>
+                </div>
+                <div class="hero-trust-row">
+                    <span class="trust-item"><i class="fa-solid fa-shield-check"></i> Compliance-Driven</span>
+                    <span class="trust-item"><i class="fa-solid fa-bolt"></i> Technology-Enabled</span>
+                    <span class="trust-item"><i class="fa-solid fa-handshake"></i> Partnership Mindset</span>
                 </div>
             </div>
             <div class="hero-visual scroll-reveal fade-in-up delay-200">
                 <div class="hero-card-mesh">
                     <div class="floating-logo-container">
-                        <img src="assets/logo.png" alt="Nexlance Logo" class="floating-logo">
+                        <img src="assets/logo.png" alt="Nexlance" class="floating-logo">
                         <div class="glowing-ring"></div>
                         <div class="glowing-ring ring-2"></div>
                     </div>
-                    <!-- Micro Stats Cards -->
                     <div class="stat-card stat-1">
-                        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
                         <div class="stat-info">
-                            <span class="stat-label">Performance Boost</span>
-                            <span class="stat-val">+40%</span>
+                            <span class="stat-label">Workforce Solutions</span>
+                            <span class="stat-val">End-to-End</span>
                         </div>
                     </div>
                     <div class="stat-card stat-2">
-                        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
                         <div class="stat-info">
-                            <span class="stat-label">Talent Sourced</span>
-                            <span class="stat-val">Elite</span>
+                            <span class="stat-label">Business Growth</span>
+                            <span class="stat-val">Accelerated</span>
                         </div>
                     </div>
                     <div class="stat-card stat-3">
-                        <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
                         <div class="stat-info">
-                            <span class="stat-label">Compliance</span>
-                            <span class="stat-val">100% Secure</span>
+                            <span class="stat-label">SaaS Platform</span>
+                            <span class="stat-val">Launching Soon</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Scroll Down Indicator -->
         <div class="scroll-indicator">
-            <a href="#about" aria-label="Scroll Down">
-                <span class="mouse-wheel"></span>
-            </a>
+            <a href="#about" aria-label="Scroll Down"><span class="mouse-wheel"></span></a>
         </div>
     </section>
 
-    <!-- Who We Are Section -->
+    <!-- ===== ABOUT NEXLANCE ===== -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="section-grid">
                 <div class="about-content scroll-reveal fade-in-up">
-                    <span class="section-tag">Who We Are</span>
-                    <h2 class="section-title">Building Stronger Businesses Through Smarter Workforce Solutions</h2>
+                    <span class="section-tag">About Nexlance</span>
+                    <h2 class="section-title">A Business Solutions Company Built for Modern Organizations</h2>
                     <p class="section-desc">
-                        Business growth depends on the right people, efficient processes, and operational excellence. Nexlance was established with a simple objective: to help organizations overcome workforce and operational challenges through integrated business solutions.
+                        Nexlance is a Business Solutions Company with two core divisions — <strong>Nexlance Services</strong> and <strong>Nexlance Products</strong>. We help organizations overcome workforce and operational challenges while building the technology that simplifies how businesses grow.
                     </p>
                     <p class="section-desc">
-                        Rather than offering standalone services, we partner with organizations to understand their business objectives, workforce needs, and operational priorities. This enables us to deliver tailored solutions that improve productivity, optimize resources, and support sustainable growth.
+                        Rather than offering standalone services, we partner with organizations to understand their goals and deliver tailored solutions that improve productivity, reduce operational overhead, and support sustainable growth.
                     </p>
                     <div class="about-highlight">
                         <div class="highlight-item">
-                            <div class="highlight-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
-                            <p><strong>Integrated Solutions:</strong> Combining talent, technology, and operations for cohesive business scaling.</p>
+                            <div class="highlight-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <p><strong>Two Core Divisions:</strong> Nexlance Services (operational solutions) + Nexlance Products (AI-powered SaaS).</p>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-icon"><i class="fa-solid fa-gem"></i></div>
-                            <p><strong>Multidisciplinary Expertise:</strong> Simplifying complex workforce management so you can focus on core priorities.</p>
+                            <div class="highlight-icon"><i class="fa-solid fa-atom"></i></div>
+                            <p><strong>Technology-Driven:</strong> We embed technology into every service and product we build for clients.</p>
                         </div>
                     </div>
                 </div>
@@ -157,13 +175,11 @@
                     <div class="experience-showcase">
                         <div class="experience-card glow-card">
                             <div class="exp-number gradient-text">P³</div>
-                            <div class="exp-title">Our Growth Philosophy</div>
-                            <div class="exp-desc">Aligning <strong>People</strong>, optimization of <strong>Processes</strong>, to drive ultimate <strong>Performance</strong>.</div>
+                            <div class="exp-title">Our Core Philosophy</div>
+                            <div class="exp-desc">Aligning <strong>People</strong>, optimizing <strong>Processes</strong>, and driving ultimate <strong>Performance</strong>.</div>
                         </div>
                         <div class="experience-circle-graphics">
-                            <div class="circle-core">
-                                <span>Nexlance</span>
-                            </div>
+                            <div class="circle-core"><span>Nexlance</span></div>
                             <div class="circle-orbit orbit-1">People</div>
                             <div class="circle-orbit orbit-2">Process</div>
                             <div class="circle-orbit orbit-3">Performance</div>
@@ -174,18 +190,66 @@
         </div>
     </section>
 
-    <!-- Solutions Section (Interactive Tabs) -->
-    <section id="solutions" class="solutions-section">
+    <!-- ===== TWO BUSINESS DIVISIONS ===== -->
+    <section id="divisions" class="divisions-section">
         <div class="container">
             <div class="section-header scroll-reveal fade-in-up">
-                <span class="section-tag">Our Solutions</span>
-                <h2 class="section-title text-center">Comprehensive Business Solutions Designed for Modern Organizations</h2>
+                <span class="section-tag">Our Business Divisions</span>
+                <h2 class="section-title text-center">Two Divisions. One Integrated Vision.</h2>
                 <p class="section-desc text-center max-w-xl">
-                    We deliver highly professional and integrated services to handle administrative overhead and optimize your business capabilities.
+                    Nexlance operates through two powerful divisions that together create a complete ecosystem for business growth.
+                </p>
+            </div>
+            <div class="divisions-grid scroll-reveal fade-in-up delay-100">
+                <!-- Division 1: Services -->
+                <div class="division-card glow-card division-services">
+                    <div class="division-badge">Division 01</div>
+                    <div class="division-icon-wrap services-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="division-title">Nexlance Services</h3>
+                    <p class="division-desc">Helping businesses solve workforce and operational challenges through expert-driven, compliance-focused services.</p>
+                    <ul class="division-list">
+                        <li><i class="fa-solid fa-check"></i> HR & Workforce Solutions</li>
+                        <li><i class="fa-solid fa-check"></i> BPO Services</li>
+                        <li><i class="fa-solid fa-check"></i> Collections & Recovery Services</li>
+                    </ul>
+                    <a href="#services" class="btn btn-primary btn-md division-cta">Explore Services <i class="fa-solid fa-arrow-right icon-right"></i></a>
+                </div>
+                <!-- Division 2: Products -->
+                <div class="division-card glow-card division-products">
+                    <div class="division-badge">Division 02</div>
+                    <div class="division-icon-wrap products-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="division-title">Nexlance Products</h3>
+                    <p class="division-desc">Building AI-powered SaaS products that simplify hiring, workforce management, and professional credibility verification.</p>
+                    <ul class="division-list">
+                        <li><i class="fa-solid fa-check"></i> AI-Powered Hiring Tools</li>
+                        <li><i class="fa-solid fa-check"></i> Workforce Management Platform</li>
+                        <li><i class="fa-solid fa-check"></i> Professional Credibility Engine</li>
+                    </ul>
+                    <div class="division-cta-wrap">
+                        <a href="#nexscore" class="btn btn-outline btn-md">Learn More</a>
+                        <span class="coming-soon-pill"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="solutions-section">
+        <div class="container">
+            <div class="section-header scroll-reveal fade-in-up">
+                <span class="section-tag">Nexlance Services</span>
+                <h2 class="section-title text-center">Comprehensive Business Services for Modern Organizations</h2>
+                <p class="section-desc text-center max-w-xl">
+                    Expert-driven, compliance-focused services that solve workforce and operational challenges at every stage of your business.
                 </p>
             </div>
 
-            <!-- Tabs Control Header -->
+            <!-- Tab Navigation -->
             <div class="tab-control-container scroll-reveal fade-in-up delay-100">
                 <div class="tabs-header-wrapper">
                     <button class="tab-btn active" data-tab="hr-solutions">
@@ -197,64 +261,61 @@
                     <button class="tab-btn" data-tab="collections-services">
                         <i class="fa-solid fa-receipt tab-icon"></i> Collections & Recovery
                     </button>
-                    <button class="tab-btn btn-coming-soon" data-tab="saas-preview">
-                        <i class="fa-solid fa-laptop-code tab-icon"></i> Technology / SaaS
-                        <span class="badge-soon">Soon</span>
-                    </button>
                 </div>
             </div>
 
-            <!-- Tabs Content Body -->
             <div class="tabs-body-container scroll-reveal fade-in-up delay-200">
-                
-                <!-- Tab 1: HR & Workforce Solutions -->
+
+                <!-- Tab 1: HR & Workforce -->
                 <div class="tab-pane active" id="hr-solutions">
                     <div class="solutions-grid">
                         <div class="solution-info-column">
                             <h3 class="solution-heading">HR & Workforce Solutions</h3>
                             <p class="solution-subtext">
-                                People are at the heart of every successful organization. Our HR & Workforce Solutions are designed to help businesses attract, manage, develop, and retain exceptional talent while building efficient HR processes that support long-term growth.
+                                People are at the heart of every successful organization. Our HR & Workforce Solutions help businesses attract, manage, develop, and retain exceptional talent while building efficient HR processes for long-term growth.
                             </p>
                             <div class="feature-bullets">
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Specialized Talent Pipelines</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> End-to-End Talent Pipelines</div>
                                 <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Compliant Policy Frameworks</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Smooth Payroll Operations</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Seamless Payroll Operations</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Startup HR Setup to Enterprise Scale</div>
                             </div>
-                            <a href="#contact" class="btn btn-outline btn-md mt-lg">Get HR Support <i class="fa-solid fa-chevron-right ml-sm"></i></a>
+                            <a href="#contact" class="btn btn-primary btn-md mt-lg">Get HR Support <i class="fa-solid fa-chevron-right ml-sm"></i></a>
                         </div>
-                        
                         <div class="solution-details-cards">
-                            <!-- Detail Card 1 -->
                             <div class="details-card-item">
                                 <div class="card-icon-wrapper"><i class="fa-solid fa-user-tie"></i></div>
                                 <h4>Recruitment & Staffing</h4>
-                                <p>Finding the right talent requires matching goals, culture, and long-term vision.</p>
+                                <p>Matching talent to your goals, culture, and long-term vision.</p>
                                 <ul class="service-sublist">
-                                    <li>Permanent & Executive Hiring</li>
-                                    <li>Bulk & Volume Recruitment</li>
-                                    <li>Contract Staffing & Talent Acquisition</li>
+                                    <li>Permanent Hiring</li>
+                                    <li>Leadership & Executive Hiring</li>
+                                    <li>Bulk & Volume Hiring</li>
+                                    <li>Contract Staffing</li>
+                                    <li>Specialized Talent Acquisition</li>
                                 </ul>
                             </div>
-                            <!-- Detail Card 2 -->
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-chalkboard-user"></i></div>
-                                <h4>HR Consulting</h4>
-                                <p>Create practical HR frameworks aligned directly with organizational and business objectives.</p>
-                                <ul class="service-sublist">
-                                    <li>HR Strategy, Policies & Compliance</li>
-                                    <li>Performance Management & Lifecycle</li>
-                                    <li>Organizational Development</li>
-                                </ul>
-                            </div>
-                            <!-- Detail Card 3 -->
                             <div class="details-card-item">
                                 <div class="card-icon-wrapper"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                                <h4>Workforce Solutions</h4>
-                                <p>Simplify workforce operations through reliable, compliant, and supportive systems.</p>
+                                <h4>Payroll Management</h4>
+                                <p>Accurate, compliant, and timely payroll processing at any scale.</p>
                                 <ul class="service-sublist">
-                                    <li>End-to-End Payroll Management</li>
-                                    <li>Workforce Administration & Documentation</li>
-                                    <li>Attendance, Leave & Startup Setup</li>
+                                    <li>End-to-End Payroll Processing</li>
+                                    <li>Statutory Compliance</li>
+                                    <li>Payslip Generation</li>
+                                    <li>Reimbursements & Deductions</li>
+                                </ul>
+                            </div>
+                            <div class="details-card-item">
+                                <div class="card-icon-wrapper"><i class="fa-solid fa-chalkboard-user"></i></div>
+                                <h4>HR Consulting & Operations</h4>
+                                <p>Build robust HR frameworks aligned with your business strategy.</p>
+                                <ul class="service-sublist">
+                                    <li>HR Strategy & Policies</li>
+                                    <li>Performance Management</li>
+                                    <li>Organizational Development</li>
+                                    <li>Workforce Admin & Documentation</li>
+                                    <li>Attendance & Leave Management</li>
                                 </ul>
                             </div>
                         </div>
@@ -265,83 +326,81 @@
                 <div class="tab-pane" id="bpo-services">
                     <div class="solutions-grid">
                         <div class="solution-info-column">
-                            <h3 class="solution-heading">Driving Operational Excellence</h3>
+                            <h3 class="solution-heading">BPO Services</h3>
                             <p class="solution-subtext">
-                                Organizations require efficient back-office operations to maintain productivity and customer satisfaction. Our Business Process Outsourcing (BPO) solutions help businesses improve efficiency, reduce operational costs, and enhance service delivery while maintaining high-quality standards.
+                                Efficient back-office operations are critical for maintaining productivity and customer satisfaction. Our BPO solutions help businesses reduce costs, improve efficiency, and enhance service quality.
                             </p>
                             <div class="feature-bullets">
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> 24/7 Multi-Channel Coverage</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> High Operational Reliability</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Scale Up and Down Resources</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> 24/7 Multi-Channel Support</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Scalable Teams On-Demand</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Trained, Quality-Assured Agents</div>
+                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Rapid Onboarding & Ramp-Up</div>
                             </div>
-                            <a href="#contact" class="btn btn-outline btn-md mt-lg">Optimize Operations <i class="fa-solid fa-chevron-right ml-sm"></i></a>
+                            <a href="#contact" class="btn btn-primary btn-md mt-lg">Optimize Operations <i class="fa-solid fa-chevron-right ml-sm"></i></a>
                         </div>
-                        
-                        <div class="solution-details-cards bpo-cards-layout">
-                            <!-- BPO Card 1 -->
-                            <div class="details-card-item glow-card">
+                        <div class="solution-details-cards">
+                            <div class="details-card-item">
                                 <div class="card-icon-wrapper"><i class="fa-solid fa-phone-volume"></i></div>
                                 <h4>Customer Support</h4>
-                                <p>Enhance user retention with prompt, professional, and reliable interaction solutions.</p>
+                                <p>Retain and delight customers with professional, reliable support.</p>
                                 <ul class="service-sublist">
-                                    <li>Voice Support (Inbound & Outbound)</li>
-                                    <li>Email Support Ticketing</li>
-                                    <li>Live Chat Helpdesk & Support</li>
+                                    <li>Voice Support</li>
+                                    <li>Email Support</li>
+                                    <li>Chat Support</li>
+                                    <li>Omni-Channel Service</li>
                                 </ul>
                             </div>
-                            <!-- BPO Card 2 -->
-                            <div class="details-card-item glow-card">
+                            <div class="details-card-item">
                                 <div class="card-icon-wrapper"><i class="fa-solid fa-network-wired"></i></div>
                                 <h4>Back Office Operations</h4>
-                                <p>Automate and streamline heavy manual transactions and system workflows.</p>
+                                <p>Automate and optimize your internal workflows and data processes.</p>
                                 <ul class="service-sublist">
-                                    <li>High-Accuracy Data Processing</li>
-                                    <li>Business Process Outsourcing (BPO)</li>
-                                    <li>Comprehensive Operational Support</li>
+                                    <li>Data Processing</li>
+                                    <li>Business Process Outsourcing</li>
+                                    <li>Back Office Administration</li>
+                                    <li>Document Management</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tab 3: Collections & Recovery Services -->
+                <!-- Tab 3: Collections & Recovery -->
                 <div class="tab-pane" id="collections-services">
                     <div class="solutions-grid">
                         <div class="solution-info-column">
-                            <h3 class="solution-heading">Ethical Recovery Solutions Built on Trust & Compliance</h3>
+                            <h3 class="solution-heading">Collections & Recovery Services</h3>
                             <p class="solution-subtext">
-                                Effective collections require a balance between business objectives and customer relationships. Nexlance provides structured recovery solutions that prioritize compliance, professionalism, and respectful customer engagement.
+                                Ethical recovery solutions built on trust, compliance, and professionalism. We help financial organizations improve recovery rates while protecting customer relationships and brand reputation.
                             </p>
                             <div class="compliance-badge">
                                 <i class="fa-solid fa-shield-halved"></i> Fully Compliant with Banking & FinTech Regulations
                             </div>
-                            <a href="#contact" class="btn btn-outline btn-md mt-lg">Discuss Recovery Plans <i class="fa-solid fa-chevron-right ml-sm"></i></a>
+                            <a href="#contact" class="btn btn-primary btn-md mt-lg">Discuss Recovery Plans <i class="fa-solid fa-chevron-right ml-sm"></i></a>
                         </div>
-                        
                         <div class="solution-details-cards">
-                            <!-- Collections Card 1 -->
                             <div class="details-card-item">
                                 <div class="card-icon-wrapper"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                                <h4>Recovery Operations</h4>
-                                <p>Manage defaults through systematic and friendly customer engagement processes.</p>
+                                <h4>Collections Operations</h4>
+                                <p>Structured, compliant recovery across all stages of the debt lifecycle.</p>
                                 <ul class="service-sublist">
-                                    <li>Early Stage & Soft Collections</li>
-                                    <li>Portfolio Management Support</li>
-                                    <li>Structured Field Recovery Assistance</li>
+                                    <li>Early Stage Collections</li>
+                                    <li>Soft Collections</li>
+                                    <li>Recovery Operations</li>
+                                    <li>Portfolio Management</li>
+                                    <li>Compliance-Based Recovery</li>
                                 </ul>
                             </div>
-                            <!-- Collections Card 2 -->
                             <div class="details-card-item">
                                 <div class="card-icon-wrapper"><i class="fa-solid fa-building-columns"></i></div>
-                                <h4>Target Industries</h4>
-                                <p>Specialized recovery operations customized for heavily regulated domains.</p>
+                                <h4>Industries Served</h4>
+                                <p>Specialized recovery solutions for regulated financial sectors.</p>
                                 <div class="industry-tags-group">
                                     <span class="ind-tag">Banks</span>
                                     <span class="ind-tag">NBFCs</span>
                                     <span class="ind-tag">FinTech</span>
                                     <span class="ind-tag">Telecom</span>
                                     <span class="ind-tag">Utilities</span>
-                                    <span class="ind-tag">SaaS</span>
                                     <span class="ind-tag">Consumer Finance</span>
                                 </div>
                             </div>
@@ -349,142 +408,28 @@
                     </div>
                 </div>
 
-                <!-- Tab 4: SaaS Preview (Coming Soon) -->
-                <div class="tab-pane" id="saas-preview">
-                    <div class="saas-grid">
-                        <div class="saas-content">
-                            <div class="badge-soon-large">Coming Soon</div>
-                            <h3 class="solution-heading">Technology for the Future of Workforce Management</h3>
-                            <p class="solution-subtext">
-                                We are designing an advanced SaaS suite designed to simplify workforce planning, automated recruitment tracking, attendance scheduling, and payroll analytics. Made for modern, agile, scaling businesses.
-                            </p>
-                            <div class="signup-microform">
-                                <p class="microform-title">Be the first to get access when we launch:</p>
-                                <form class="saas-waitlist-form">
-                                    <input type="email" placeholder="Enter your business email" required class="waitlist-input">
-                                    <button type="submit" class="btn btn-primary waitlist-btn">Join Waitlist</button>
-                                </form>
-                                <div class="waitlist-msg"></div>
-                            </div>
-                        </div>
-                        <div class="saas-dashboard-mockup">
-                            <div class="mockup-frame">
-                                <div class="mockup-header">
-                                    <div class="mockup-dots"><span></span><span></span><span></span></div>
-                                    <div class="mockup-title">nexlance.io/dashboard</div>
-                                </div>
-                                <div class="mockup-body">
-                                    <!-- Simplified Dashboard Visuals -->
-                                    <div class="mockup-sidebar">
-                                        <div class="sbar-item active"></div>
-                                        <div class="sbar-item"></div>
-                                        <div class="sbar-item"></div>
-                                    </div>
-                                    <div class="mockup-main">
-                                        <div class="main-widgets">
-                                            <div class="widget wid-1"></div>
-                                            <div class="widget wid-2"></div>
-                                        </div>
-                                        <div class="main-chart">
-                                            <div class="chart-bar bar-1"></div>
-                                            <div class="chart-bar bar-2"></div>
-                                            <div class="chart-bar bar-3"></div>
-                                            <div class="chart-bar bar-4"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Why Nexlance Section -->
-    <section id="why-choose" class="why-section">
-        <div class="container">
-            <div class="section-header scroll-reveal fade-in-up">
-                <span class="section-tag">Why Nexlance</span>
-                <h2 class="section-title text-center">Why Organizations Choose Nexlance</h2>
-                <p class="section-desc text-center max-w-xl">
-                    Business relationships are built on trust, consistency, and results. We focus on understanding your operational challenges before recommending strategies.
-                </p>
-            </div>
-
-            <div class="why-grid">
-                <!-- Why Card 1 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up">
-                    <div class="why-icon"><i class="fa-solid fa-briefcase"></i></div>
-                    <h3>Business-First Approach</h3>
-                    <p>We align our staffing and operational services with your core metrics and commercial goals.</p>
-                </div>
-                <!-- Why Card 2 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
-                    <div class="why-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>Industry-Focused Expertise</h3>
-                    <p>Our team understands specific market compliances, regulatory requirements, and technical standards.</p>
-                </div>
-                <!-- Why Card 3 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-200">
-                    <div class="why-icon"><i class="fa-solid fa-arrows-spin"></i></div>
-                    <h3>Personalized Engagement</h3>
-                    <p>No cookie-cutter packages. Every client receives dedicated account managers and tailor-made workflows.</p>
-                </div>
-                <!-- Why Card 4 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up">
-                    <div class="why-icon"><i class="fa-solid fa-circle-check"></i></div>
-                    <h3>Reliable & Timely Delivery</h3>
-                    <p>Strict Service Level Agreements (SLAs) combined with thorough monitoring systems ensure consistency.</p>
-                </div>
-                <!-- Why Card 5 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
-                    <div class="why-icon"><i class="fa-solid fa-comments"></i></div>
-                    <h3>Transparent Communication</h3>
-                    <p>Get full insight. We provide absolute transparency in costs, processes, and weekly delivery statistics.</p>
-                </div>
-                <!-- Why Card 6 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-200">
-                    <div class="why-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3>Scalable Solutions</h3>
-                    <p>Easily expand your workforce operations or outsource systems dynamically as your business demands scale.</p>
-                </div>
-                <!-- Why Card 7 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up">
-                    <div class="why-icon"><i class="fa-solid fa-building-shield"></i></div>
-                    <h3>Strong Compliance Practices</h3>
-                    <p>Zero risk. Total adherence to labor laws, regulatory standards, data policies, and financial protocols.</p>
-                </div>
-                <!-- Why Card 8 -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
-                    <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
-                    <h3>Long-Term Partnership Mindset</h3>
-                    <p>We work as an extension of your company, investing resources in support of your long-term success.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industries We Serve Section -->
+    <!-- ===== INDUSTRIES WE SERVE ===== -->
     <section id="industries" class="industries-section">
         <div class="container">
             <div class="section-header scroll-reveal fade-in-up">
                 <span class="section-tag">Industries We Serve</span>
-                <h2 class="section-title text-center">Tailored Support Across Diverse Market Sectors</h2>
+                <h2 class="section-title text-center">Tailored Solutions Across Every Sector</h2>
                 <p class="section-desc text-center max-w-xl">
-                    Whether you are an early-stage startup setting up operations or an enterprise scaling services, we deliver.
+                    From early-stage startups to established enterprises, we deliver across every major industry vertical.
                 </p>
             </div>
-
             <div class="industries-grid scroll-reveal fade-in-up delay-100">
                 <div class="industry-card glow-card">
                     <div class="ind-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                    <h4>Technology & IT</h4>
+                    <h4>Technology</h4>
                 </div>
                 <div class="industry-card glow-card">
                     <div class="ind-icon"><i class="fa-solid fa-coins"></i></div>
-                    <h4>FinTech & NBFC</h4>
+                    <h4>FinTech</h4>
                 </div>
                 <div class="industry-card glow-card">
                     <div class="ind-icon"><i class="fa-solid fa-building-columns"></i></div>
@@ -511,113 +456,250 @@
                     <h4>Logistics</h4>
                 </div>
                 <div class="industry-card glow-card">
-                    <div class="ind-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
-                    <h4>Telecommunications</h4>
-                </div>
-                <div class="industry-card glow-card">
                     <div class="ind-icon"><i class="fa-solid fa-hotel"></i></div>
                     <h4>Hospitality</h4>
                 </div>
                 <div class="industry-card glow-card">
+                    <div class="ind-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h4>Professional Services</h4>
+                </div>
+                <div class="industry-card glow-card">
                     <div class="ind-icon"><i class="fa-solid fa-rocket"></i></div>
-                    <h4>Startups & Scaleups</h4>
+                    <h4>Startups</h4>
                 </div>
                 <div class="industry-card glow-card">
                     <div class="ind-icon"><i class="fa-solid fa-building"></i></div>
-                    <h4>Enterprise Orgs</h4>
+                    <h4>Enterprise Organizations</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Approach (Interactive Timeline) -->
+    <!-- ===== WHY NEXLANCE ===== -->
+    <section id="why-choose" class="why-section">
+        <div class="container">
+            <div class="section-header scroll-reveal fade-in-up">
+                <span class="section-tag">Why Nexlance</span>
+                <h2 class="section-title text-center">Why Organizations Choose Nexlance</h2>
+                <p class="section-desc text-center max-w-xl">
+                    We don't just provide services — we become a strategic partner committed to your long-term business success.
+                </p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card glow-card scroll-reveal fade-in-up">
+                    <div class="why-icon"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3>Business-First Approach</h3>
+                    <p>We align our services with your business metrics and commercial goals, not just operational KPIs.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
+                    <div class="why-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Customized Workforce Solutions</h3>
+                    <p>No templates. Every engagement is designed around your specific workforce structure and growth stage.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up delay-200">
+                    <div class="why-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Industry-Specific Expertise</h3>
+                    <p>Our specialists understand the compliance requirements and talent dynamics of your specific sector.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up">
+                    <div class="why-icon"><i class="fa-solid fa-building-shield"></i></div>
+                    <h3>Compliance-Driven Services</h3>
+                    <p>Zero risk. Every service is delivered with strict adherence to labor laws, regulatory, and data standards.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
+                    <div class="why-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Scalable Business Support</h3>
+                    <p>Scale your workforce and operational support dynamically — grow fast without operational bottlenecks.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up delay-200">
+                    <div class="why-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Technology-Enabled Solutions</h3>
+                    <p>We integrate technology into every service touchpoint, making your operations smarter and faster.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up">
+                    <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Dedicated Account Management</h3>
+                    <p>A dedicated team that understands your business deeply and ensures consistent, high-quality delivery.</p>
+                </div>
+                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
+                    <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Long-Term Partnership Approach</h3>
+                    <p>We invest in your long-term success. Our engagements evolve with your business, not just your current needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEXSCORE — PRODUCT SHOWCASE ===== -->
+    <section id="nexscore" class="nexscore-section">
+        <div class="container">
+            <div class="nexscore-inner">
+                <div class="nexscore-content scroll-reveal fade-in-up">
+                    <div class="nexscore-eyebrow">
+                        <span class="section-tag">Nexlance Products</span>
+                        <span class="launch-pill"><i class="fa-solid fa-satellite-dish"></i> Launching Soon</span>
+                    </div>
+                    <h2 class="nexscore-headline">Introducing <span class="gradient-text text-animate">Nexlance Product</span></h2>
+                    <p class="nexscore-desc">
+                        We are building AI-powered SaaS products that will transform how organizations hire, verify professional credibility, and manage their workforce. The future of intelligent workforce management starts here.
+                    </p>
+                    <div class="nexscore-features">
+                        <div class="nscore-feat">
+                            <div class="nscore-feat-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <strong>AI-Powered Hiring</strong>
+                                <p>Intelligent candidate screening and matching at scale.</p>
+                            </div>
+                        </div>
+                        <div class="nscore-feat">
+                            <div class="nscore-feat-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div>
+                                <strong>Professional Credibility</strong>
+                                <p>Verify skills, experience, and background with confidence.</p>
+                            </div>
+                        </div>
+                        <div class="nscore-feat">
+                            <div class="nscore-feat-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div>
+                                <strong>Workforce Analytics</strong>
+                                <p>Real-time dashboards and predictive workforce insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nexscore-cta-group">
+                        <div class="signup-microform">
+                            <p class="microform-title">Be the first to get early access:</p>
+                            <form class="saas-waitlist-form">
+                                <input type="email" placeholder="Enter your business email" required class="waitlist-input">
+                                <button type="submit" class="btn btn-primary waitlist-btn">Join Waitlist</button>
+                            </form>
+                            <div class="waitlist-msg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nexscore-visual scroll-reveal fade-in-up delay-200">
+                    <div class="mockup-frame">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-title">nexlance.io/dashboard</div>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-sidebar">
+                                <div class="sbar-item active"></div>
+                                <div class="sbar-item"></div>
+                                <div class="sbar-item"></div>
+                                <div class="sbar-item"></div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="main-stats-row">
+                                    <div class="ms-card"><span class="ms-val gradient-text">94</span><span class="ms-label">Score</span></div>
+                                    <div class="ms-card"><span class="ms-val" style="color:#06b6d4">128</span><span class="ms-label">Verified</span></div>
+                                    <div class="ms-card"><span class="ms-val" style="color:#d946ef">12</span><span class="ms-label">Pending</span></div>
+                                </div>
+                                <div class="main-chart">
+                                    <div class="chart-bar bar-1"></div>
+                                    <div class="chart-bar bar-2"></div>
+                                    <div class="chart-bar bar-3"></div>
+                                    <div class="chart-bar bar-4"></div>
+                                    <div class="chart-bar bar-5"></div>
+                                </div>
+                                <div class="mock-table">
+                                    <div class="mt-row header"><span>Candidate</span><span>Score</span><span>Status</span></div>
+                                    <div class="mt-row"><span>Priya S.</span><span class="s-good">92</span><span class="s-pill green">Verified</span></div>
+                                    <div class="mt-row"><span>Rahul M.</span><span class="s-good">88</span><span class="s-pill green">Verified</span></div>
+                                    <div class="mt-row"><span>Anjali K.</span><span class="s-mid">74</span><span class="s-pill yellow">Review</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR APPROACH ===== -->
     <section id="approach" class="approach-section">
         <div class="container">
             <div class="section-header scroll-reveal fade-in-up">
                 <span class="section-tag">Our Approach</span>
                 <h2 class="section-title text-center">A Structured Process That Delivers Results</h2>
                 <p class="section-desc text-center max-w-xl">
-                    We ensure seamless alignment and rapid scaling from the very first consultation call.
+                    A proven four-step framework that ensures every engagement delivers measurable business value.
                 </p>
             </div>
-
             <div class="timeline-container">
-                <!-- Line background graphic -->
-                <div class="timeline-line">
-                    <div class="timeline-progress"></div>
-                </div>
-
-                <!-- Step 1 -->
+                <div class="timeline-line"><div class="timeline-progress"></div></div>
                 <div class="timeline-step scroll-reveal fade-in-up">
                     <div class="timeline-marker">1</div>
                     <div class="timeline-card glow-card">
+                        <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <h4 class="step-title">Understand</h4>
-                        <p>We begin by thoroughly understanding your business objectives, workforce requirements, and operational priorities.</p>
+                        <p>We begin by deeply understanding your business objectives, workforce requirements, and operational priorities.</p>
                     </div>
                 </div>
-                <!-- Step 2 -->
                 <div class="timeline-step scroll-reveal fade-in-up">
                     <div class="timeline-marker">2</div>
                     <div class="timeline-card glow-card">
+                        <div class="step-icon"><i class="fa-solid fa-chess"></i></div>
                         <h4 class="step-title">Strategize</h4>
-                        <p>Our multidisciplinary experts design a customized solution aligned perfectly with your organizational goals.</p>
+                        <p>Our multidisciplinary experts design a customized solution tailored precisely to your organizational goals.</p>
                     </div>
                 </div>
-                <!-- Step 3 -->
                 <div class="timeline-step scroll-reveal fade-in-up">
                     <div class="timeline-marker">3</div>
                     <div class="timeline-card glow-card">
+                        <div class="step-icon"><i class="fa-solid fa-gears"></i></div>
                         <h4 class="step-title">Execute</h4>
-                        <p>Our operational teams deliver recruitment, workforce, BPO, or recovery solutions with precision, speed, and strict SLAs.</p>
+                        <p>Our teams deliver solutions with precision, speed, and strict SLAs across recruitment, workforce, BPO, or recovery.</p>
                     </div>
                 </div>
-                <!-- Step 4 -->
                 <div class="timeline-step scroll-reveal fade-in-up">
                     <div class="timeline-marker">4</div>
                     <div class="timeline-card glow-card">
+                        <div class="step-icon"><i class="fa-solid fa-chart-line"></i></div>
                         <h4 class="step-title">Optimize</h4>
-                        <p>We continuously evaluate outcomes, monitor metrics, and recommend improvements to ensure long-term, scalable success.</p>
+                        <p>We continuously evaluate outcomes and recommend improvements to ensure long-term, scalable success.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Commitment & CTA -->
+    <!-- ===== CTA BANNER ===== -->
     <section class="cta-section">
         <div class="container cta-container">
             <div class="cta-inner glow-card scroll-reveal fade-in-up">
                 <div class="cta-glow-decor"></div>
                 <h2>Let's Build the Future of Your Business Together</h2>
                 <p class="cta-sub">
-                    Whether you are expanding your workforce, improving operational efficiency, strengthening HR processes, or looking for scalable business support, Nexlance is ready to partner with you.
+                    Whether you're scaling your team, optimizing operations, or preparing for your next growth phase — Nexlance is ready to be your strategic partner.
                 </p>
                 <div class="cta-actions-group">
                     <a href="#contact" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-                    <a href="mailto:collab@nexlance.co.in" class="btn btn-outline btn-lg"><i class="fa-regular fa-envelope"></i> Contact Our Team</a>
+                    <a href="mailto:karthick@nexlance.co.in" class="btn btn-outline btn-lg"><i class="fa-regular fa-envelope"></i> Contact Our Team</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-grid">
-                <!-- Info Column -->
                 <div class="contact-info scroll-reveal fade-in-up">
                     <span class="section-tag">Get In Touch</span>
                     <h2 class="section-title">Let's discuss how Nexlance can support your organization's growth.</h2>
                     <p class="contact-desc">
-                        Our experts are ready to listen, strategize, and build tailored support systems for your enterprise. Send us a message or schedule a call.
+                        Our experts are ready to listen, strategize, and build tailored solutions for your organization. Reach out and let's build something great together.
                     </p>
-
                     <div class="contact-details-list">
                         <div class="contact-item-box">
                             <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
                             <div class="c-info">
                                 <span class="c-label">Email Us</span>
-                                <a href="mailto:collab@nexlance.co.in" class="c-val">collab@nexlance.co.in</a>
+                                <a href="mailto:karthick@nexlance.co.in" class="c-val">karthick@nexlance.co.in</a>
                             </div>
                         </div>
                         <div class="contact-item-box">
@@ -630,14 +712,12 @@
                         <div class="contact-item-box">
                             <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
                             <div class="c-info">
-                                <span class="c-label">Our Location</span>
+                                <span class="c-label">Location</span>
                                 <span class="c-val">Electronic City, Bengaluru, Karnataka</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Form Column -->
                 <div class="contact-form-container scroll-reveal fade-in-up delay-200">
                     <div class="form-wrapper glow-card">
                         <h3>Send Us a Message</h3>
@@ -655,11 +735,11 @@
                             <div class="form-group-row">
                                 <div class="form-control-item">
                                     <label for="c-phone">Phone Number</label>
-                                    <input type="tel" id="c-phone" placeholder="e.g., +91 98765 43210">
+                                    <input type="tel" id="c-phone" placeholder="+91 98765 43210">
                                 </div>
                                 <div class="form-control-item">
                                     <label for="c-company">Company Name</label>
-                                    <input type="text" id="c-company" placeholder="e.g., Nexlance Ltd.">
+                                    <input type="text" id="c-company" placeholder="Your Company">
                                 </div>
                             </div>
                             <div class="form-control-item">
@@ -669,24 +749,23 @@
                                     <option value="hr-solutions">HR & Workforce Solutions</option>
                                     <option value="bpo-services">BPO & Support Services</option>
                                     <option value="collections">Collections & Recovery Services</option>
-                                    <option value="other">General / Business Inquiry</option>
+                                    <option value="products">Nexlance Products / SaaS</option>
+                                    <option value="other">General Business Inquiry</option>
                                 </select>
                             </div>
                             <div class="form-control-item">
-                                <label for="c-msg">Message / Inquiry Details *</label>
+                                <label for="c-msg">Message *</label>
                                 <textarea id="c-msg" required rows="4" placeholder="Briefly describe your requirements..."></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-md mt-md">
                                 Submit Inquiry <i class="fa-solid fa-paper-plane ml-sm"></i>
                             </button>
                         </form>
-                        
-                        <!-- Form Success Animation State -->
                         <div class="form-success-overlay">
                             <div class="success-content">
                                 <div class="success-icon"><i class="fa-solid fa-check"></i></div>
                                 <h4>Inquiry Submitted!</h4>
-                                <p>Thank you for reaching out. A Nexlance consultant will review your request and get back to you within 24 hours.</p>
+                                <p>A Nexlance consultant will review your request and get back to you within 24 hours.</p>
                                 <button class="btn btn-primary btn-sm reset-form-btn">Send Another Message</button>
                             </div>
                         </div>
@@ -696,7 +775,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
@@ -704,37 +783,42 @@
                     <img src="assets/logo.png" alt="Nexlance Logo" class="logo-img">
                     <span class="logo-text">Nexlance</span>
                 </a>
-                <p class="brand-tagline">Empowering Businesses Through People, Process & Performance.</p>
+                <p class="brand-tagline">A Business Solutions Company — Empowering businesses through People, Process & Performance.</p>
                 <div class="social-icons">
                     <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-links-group">
                 <div class="footer-col">
-                    <h5>Solutions</h5>
+                    <h5>Services</h5>
                     <ul>
-                        <li><a href="#solutions">HR & Workforce</a></li>
-                        <li><a href="#solutions">BPO Services</a></li>
-                        <li><a href="#solutions">Collections & Recovery</a></li>
-                        <li><a href="#solutions">SaaS Platform (Soon)</a></li>
+                        <li><a href="#services">HR & Workforce Solutions</a></li>
+                        <li><a href="#services">BPO Services</a></li>
+                        <li><a href="#services">Collections & Recovery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#nexscore">NexScore <span class="foot-badge">Soon</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h5>Company</h5>
                     <ul>
-                        <li><a href="#about">Who We Are</a></li>
-                        <li><a href="#industries">Industries</a></li>
-                        <li><a href="#approach">Our Approach</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h5>Contact Info</h5>
+                    <h5>Contact</h5>
                     <ul class="footer-contact-details">
-                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:collab@nexlance.co.in">collab@nexlance.co.in</a></li>
+                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:karthick@nexlance.co.in">karthick@nexlance.co.in</a></li>
                         <li><i class="fa-solid fa-location-dot"></i> Electronic City, Bengaluru</li>
                     </ul>
                 </div>
@@ -751,7 +835,6 @@
         </div>
     </footer>
 
-    <!-- Custom Script -->
     <script src="js/main.js"></script>
 </body>
 </html>
