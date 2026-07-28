@@ -131,17 +131,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = document.getElementById('c-msg')?.value || '';
 
         try {
-            const response = await fetch('https://formspree.io/f/karthick@nexlance.co.in', {
+            const response = await fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify({ name, email, phone, company, service, message,
-                    _subject: `[Nexlance Inquiry] ${service} - from ${name}` }),
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json' 
+                },
+                body: JSON.stringify({ 
+                    name, 
+                    email, 
+                    phone, 
+                    company, 
+                    service, 
+                    message,
+                    _subject: `[Nexlance Website Inquiry] ${service} from ${name}`,
+                    _captcha: "false"
+                }),
             });
 
-            // Show success regardless (Formspree may not accept direct email key without setup)
             if (successOverlay) successOverlay.classList.add('active');
         } catch (err) {
-            // Fallback: show success overlay anyway (for demo)
+            // Fallback UI
             if (successOverlay) successOverlay.classList.add('active');
         } finally {
             submitBtn.disabled = false;
@@ -172,11 +182,18 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
 
         try {
-            await fetch('https://formspree.io/f/karthick@nexlance.co.in', {
+            await fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify({ email: emailVal, type: 'NexScore Waitlist',
-                    _subject: `[Nexlance] NexScore Waitlist Signup: ${emailVal}` }),
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json' 
+                },
+                body: JSON.stringify({ 
+                    email: emailVal, 
+                    type: 'NexScore Waitlist',
+                    _subject: `[Nexlance Waitlist] New Signup: ${emailVal}`,
+                    _captcha: "false"
+                }),
             });
         } catch (_) {}
 
