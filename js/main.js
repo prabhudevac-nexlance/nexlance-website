@@ -111,11 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================================================
-       7. CONTACT FORM — Formspree submission to karthick@nexlance.co.in
+       7. CONTACT FORM — Email + Google Sheets / Excel Auto-Save
        ========================================================================== */
     const inquiryForm = document.getElementById('inquiry-form');
     const successOverlay = document.querySelector('.form-success-overlay');
     const resetBtn = document.querySelector('.reset-form-btn');
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxcHHAVpOVfw7y_tFAisnEr7EPdHm5RLb5I4UjpLjgejy6BrLiz0-qu24wL9v7gubXV/exec';
 
     inquiryForm?.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -130,28 +131,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const service = document.getElementById('c-service')?.value || '';
         const message = document.getElementById('c-msg')?.value || '';
 
+        const payload = { name, email, phone, company, service, message };
+
         try {
-            const response = await fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
+            // 1. Send Email Notification via FormSubmit
+            const emailPromise = fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
                 method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json' 
-                },
-                body: JSON.stringify({ 
-                    name, 
-                    email, 
-                    phone, 
-                    company, 
-                    service, 
-                    message,
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    ...payload,
                     _subject: `[Nexlance Website Inquiry] ${service} from ${name}`,
                     _captcha: "false"
                 }),
             });
 
+            // 2. Save directly into Google Sheets / Excel via Apps Script
+            const sheetPromise = fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+
+            await Promise.allSettled([emailPromise, sheetPromise]);
             if (successOverlay) successOverlay.classList.add('active');
         } catch (err) {
-            // Fallback UI
             if (successOverlay) successOverlay.classList.add('active');
         } finally {
             submitBtn.disabled = false;
@@ -165,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================================================
-       8. WAITLIST FORM (NexScore)
+       8. WAITLIST FORM — Email + Google Sheets / Excel Auto-Save
        ========================================================================== */
     const waitlistForm = document.querySelector('.saas-waitlist-form');
     const waitlistMsg = document.querySelector('.waitlist-msg');
@@ -181,20 +185,37 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.disabled = true;
         btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
 
+        const waitlistPayload = {
+            name: 'Waitlist Lead',
+            email: emailVal,
+            phone: '-',
+            company: '-',
+            service: 'NexScore Waitlist',
+            message: 'Signed up for NexScore SaaS Early Access'
+        };
+
         try {
-            await fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
+            // 1. Send Email Notification
+            const emailPromise = fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
                 method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json' 
-                },
-                body: JSON.stringify({ 
-                    email: emailVal, 
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    email: emailVal,
                     type: 'NexScore Waitlist',
                     _subject: `[Nexlance Waitlist] New Signup: ${emailVal}`,
                     _captcha: "false"
                 }),
             });
+
+            // 2. Save directly into Google Sheets / Excel
+            const sheetPromise = fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(waitlistPayload),
+            });
+
+            await Promise.allSettled([emailPromise, sheetPromise]);
         } catch (_) {}
 
         if (waitlistMsg) {
