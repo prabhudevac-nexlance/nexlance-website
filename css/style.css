@@ -507,28 +507,28 @@ a.c-val:hover { color: var(--color-teal); }
 .success-content p { color: var(--text-secondary); font-size: .92rem; line-height: 1.5; margin-bottom: 2rem; max-width: 300px; }
 
 /* ==========================================================================
-   FOOTER — Crisp White Background Theme
+   FOOTER — Compact Crisp White Theme
    ========================================================================== */
-.footer { border-top: 1px solid #e2e8f0; background: #ffffff; color: #0f172a; padding: 6rem 0 2rem 0; position: relative; z-index: 1; }
-.footer-container { display: grid; grid-template-columns: 1fr 1.6fr; gap: 5rem; padding-bottom: 4rem; border-bottom: 1px solid #e2e8f0; }
+.footer { border-top: 1px solid #e2e8f0; background: #ffffff; color: #0f172a; padding: 3.5rem 0 1.5rem 0; position: relative; z-index: 1; }
+.footer-container { display: grid; grid-template-columns: 1fr 1.6fr; gap: 3.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid #e2e8f0; }
 .footer-brand { display: flex; flex-direction: column; align-items: flex-start; }
 .footer .logo-text { color: #0f172a; }
-.brand-tagline { font-size: .92rem; color: #475569; margin-top: 1.1rem; margin-bottom: 1.8rem; max-width: 290px; line-height: 1.6; }
-.social-icons { display: flex; gap: .9rem; }
-.social-icons a { width: 36px; height: 36px; border-radius: 50%; background: #f1f5f9; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #475569; font-size: .9rem; }
-.social-icons a:hover { color: #ffffff; border-color: var(--color-indigo); background: var(--color-indigo); transform: translateY(-3px); }
-.footer-links-group { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; }
-.footer-col h5 { font-size: .95rem; font-weight: 700; margin-bottom: 1.3rem; color: #0f172a; }
-.footer-col ul { display: flex; flex-direction: column; gap: .7rem; }
-.footer-col ul li a { font-size: .88rem; color: #475569; }
+.brand-tagline { font-size: .88rem; color: #475569; margin-top: .8rem; margin-bottom: 1.2rem; max-width: 290px; line-height: 1.5; }
+.social-icons { display: flex; gap: .75rem; }
+.social-icons a { width: 34px; height: 34px; border-radius: 50%; background: #f1f5f9; border: 1px solid #e2e8f0; display: flex; align-items: center; justify-content: center; color: #475569; font-size: .85rem; }
+.social-icons a:hover { color: #ffffff; border-color: var(--color-indigo); background: var(--color-indigo); transform: translateY(-2px); }
+.footer-links-group { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.8rem; }
+.footer-col h5 { font-size: .9rem; font-weight: 700; margin-bottom: .9rem; color: #0f172a; }
+.footer-col ul { display: flex; flex-direction: column; gap: .5rem; }
+.footer-col ul li a { font-size: .85rem; color: #475569; }
 .footer-col ul li a:hover { color: #0f172a; padding-left: 3px; }
-.foot-badge { font-size: .65rem; font-weight: 700; padding: .1rem .4rem; background: var(--color-pink); border-radius: 6px; color: #fff; margin-left: .4rem; vertical-align: middle; }
-.footer-contact-details li { font-size: .88rem; color: #475569; display: flex; align-items: center; gap: .55rem; }
+.foot-badge { font-size: .62rem; font-weight: 700; padding: .1rem .4rem; background: var(--color-pink); border-radius: 6px; color: #fff; margin-left: .4rem; vertical-align: middle; }
+.footer-contact-details li { font-size: .85rem; color: #475569; display: flex; align-items: center; gap: .5rem; }
 .footer-contact-details a { color: #475569; }
 .footer-contact-details a:hover { color: var(--color-teal); }
-.footer-bottom { padding-top: 1.8rem; }
-.fb-container { display: flex; justify-content: space-between; align-items: center; font-size: .82rem; color: #64748b; }
-.footer-bottom-links { display: flex; gap: 1.8rem; }
+.footer-bottom { padding-top: 1.2rem; }
+.fb-container { display: flex; justify-content: space-between; align-items: center; font-size: .8rem; color: #64748b; }
+.footer-bottom-links { display: flex; gap: 1.5rem; }
 .footer-bottom-links a { color: #64748b; }
 .footer-bottom-links a:hover { color: #0f172a; }
 
