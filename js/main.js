@@ -146,11 +146,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // 2. Save directly into Google Sheets / Excel via Apps Script
+            const formParams = new URLSearchParams();
+            formParams.append('name', name);
+            formParams.append('email', email);
+            formParams.append('phone', phone);
+            formParams.append('company', company);
+            formParams.append('service', service);
+            formParams.append('message', message);
+
             const sheetPromise = fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload),
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: formParams.toString(),
             });
 
             await Promise.allSettled([emailPromise, sheetPromise]);
@@ -185,15 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.disabled = true;
         btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
 
-        const waitlistPayload = {
-            name: 'Waitlist Lead',
-            email: emailVal,
-            phone: '-',
-            company: '-',
-            service: 'NexScore Waitlist',
-            message: 'Signed up for NexScore SaaS Early Access'
-        };
-
         try {
             // 1. Send Email Notification
             const emailPromise = fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
@@ -208,11 +207,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // 2. Save directly into Google Sheets / Excel
+            const waitlistParams = new URLSearchParams();
+            waitlistParams.append('name', 'Waitlist Lead');
+            waitlistParams.append('email', emailVal);
+            waitlistParams.append('phone', '-');
+            waitlistParams.append('company', '-');
+            waitlistParams.append('service', 'NexScore Waitlist');
+            waitlistParams.append('message', 'Signed up for NexScore SaaS Early Access');
+
             const sheetPromise = fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(waitlistPayload),
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: waitlistParams.toString(),
             });
 
             await Promise.allSettled([emailPromise, sheetPromise]);
