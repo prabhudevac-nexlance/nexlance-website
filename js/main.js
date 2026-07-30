@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 1. Send Email Notification via FormSubmit
-            const emailPromise = fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
+            const emailPromise = fetch('https://formsubmit.co/ajax/Collab@nexlance.co.in', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify({
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 1. Send Email Notification
-            const emailPromise = fetch('https://formsubmit.co/ajax/karthick@nexlance.co.in', {
+            const emailPromise = fetch('https://formsubmit.co/ajax/Collab@nexlance.co.in', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify({
