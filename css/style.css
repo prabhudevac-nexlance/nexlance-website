@@ -223,24 +223,24 @@ ul { list-style: none; }
 /* Hero Visual */
 .hero-visual { display: flex; justify-content: center; }
 .hero-card-mesh {
-    width: 340px; height: 340px;
+    width: 300px; height: 300px;
     background: radial-gradient(circle, rgba(13,11,26,.85) 0%, rgba(6,5,12,.3) 100%);
     border: 1px solid var(--border-color); border-radius: 50%;
     position: relative; display: flex; align-items: center; justify-content: center;
     box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
 .floating-logo-container {
-    width: 90px; height: 90px; border-radius: 50%; background: #ffffff;
-    padding: 12px; display: flex; align-items: center; justify-content: center;
-    position: relative; z-index: 5; box-shadow: 0 0 30px rgba(255,255,255,.55);
+    width: 85px; height: 85px; border-radius: 50%; background: #ffffff;
+    padding: 11px; display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 5; box-shadow: 0 0 28px rgba(255,255,255,.55);
     animation: float-logo 6s ease-in-out infinite;
 }
 .floating-logo { width: 100%; height: 100%; object-fit: contain; }
 @keyframes float-logo { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-12px) rotate(2deg)} }
 
 .glowing-ring { position: absolute; border-radius: 50%; animation: rotate-ring 35s linear infinite; }
-.glowing-ring:first-of-type { width: 220px; height: 220px; border: 1.5px dashed rgba(6,182,212,.2); }
-.ring-2 { width: 290px; height: 290px; border: 1.5px solid rgba(217,70,239,.1); animation-duration: 45s; animation-direction: reverse; }
+.glowing-ring:first-of-type { width: 200px; height: 200px; border: 1.5px dashed rgba(6,182,212,.2); }
+.ring-2 { width: 260px; height: 260px; border: 1.5px solid rgba(217,70,239,.1); animation-duration: 45s; animation-direction: reverse; }
 @keyframes rotate-ring { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
 
 .stat-card {
@@ -284,8 +284,8 @@ ul { list-style: none; }
 .exp-number { font-size: 3.2rem; font-weight: 800; line-height: 1; margin-bottom: .5rem; }
 .exp-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .7rem; }
 .exp-desc { font-size: .92rem; color: var(--text-secondary); }
-.experience-circle-graphics { width: 290px; height: 290px; border: 1px dashed rgba(255,255,255,.07); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
-.circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 90px; height: 90px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; z-index: 5; box-shadow: 0 0 30px rgba(255,255,255,.55); padding: 12px; }
+.experience-circle-graphics { width: 300px; height: 300px; border: 1px dashed rgba(255,255,255,.07); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
+.circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 85px; height: 85px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; z-index: 5; box-shadow: 0 0 28px rgba(255,255,255,.55); padding: 11px; }
 .circle-core-logo { width: 100%; height: 100%; object-fit: contain; animation: rotate-ring 60s linear infinite reverse; }
 .circle-orbit { position: absolute; width: 55px; height: 55px; border-radius: 50%; background: var(--bg-secondary); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700; color: var(--text-secondary); animation: rotate-ring 60s linear infinite reverse; }
 .orbit-1 { top: -27px; left: calc(50% - 27px); }
