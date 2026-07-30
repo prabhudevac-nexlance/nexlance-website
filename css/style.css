@@ -281,6 +281,7 @@ ul { list-style: none; }
 .exp-desc { font-size: .92rem; color: var(--text-secondary); }
 .experience-circle-graphics { width: 280px; height: 280px; border: 1px dashed rgba(255,255,255,.07); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
 .circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 85px; height: 85px; border-radius: 50%; background: linear-gradient(135deg, var(--color-teal), var(--color-indigo)); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .88rem; box-shadow: 0 0 25px rgba(99,102,241,.4); }
+.circle-core-logo { width: 48px; height: 48px; object-fit: contain; animation: rotate-ring 60s linear infinite reverse; filter: drop-shadow(0 2px 6px rgba(0,0,0,.3)); }
 .circle-core span { animation: rotate-ring 60s linear infinite reverse; }
 .circle-orbit { position: absolute; width: 55px; height: 55px; border-radius: 50%; background: var(--bg-secondary); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700; color: var(--text-secondary); animation: rotate-ring 60s linear infinite reverse; }
 .orbit-1 { top: -27px; left: calc(50% - 27px); }
