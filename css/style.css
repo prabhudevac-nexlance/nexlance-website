@@ -223,24 +223,24 @@ ul { list-style: none; }
 /* Hero Visual */
 .hero-visual { display: flex; justify-content: center; }
 .hero-card-mesh {
-    width: 400px; height: 400px;
+    width: 340px; height: 340px;
     background: radial-gradient(circle, rgba(13,11,26,.85) 0%, rgba(6,5,12,.3) 100%);
     border: 1px solid var(--border-color); border-radius: 50%;
     position: relative; display: flex; align-items: center; justify-content: center;
     box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
 .floating-logo-container {
-    width: 160px; height: 160px; border-radius: 50%; background: #ffffff;
-    padding: 22px; display: flex; align-items: center; justify-content: center;
-    position: relative; z-index: 5; box-shadow: 0 0 45px rgba(255,255,255,.6);
+    width: 90px; height: 90px; border-radius: 50%; background: #ffffff;
+    padding: 12px; display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 5; box-shadow: 0 0 30px rgba(255,255,255,.55);
     animation: float-logo 6s ease-in-out infinite;
 }
 .floating-logo { width: 100%; height: 100%; object-fit: contain; }
 @keyframes float-logo { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-12px) rotate(2deg)} }
 
 .glowing-ring { position: absolute; border-radius: 50%; animation: rotate-ring 35s linear infinite; }
-.glowing-ring:first-of-type { width: 260px; height: 260px; border: 1.5px dashed rgba(6,182,212,.2); }
-.ring-2 { width: 340px; height: 340px; border: 1.5px solid rgba(217,70,239,.1); animation-duration: 45s; animation-direction: reverse; }
+.glowing-ring:first-of-type { width: 220px; height: 220px; border: 1.5px dashed rgba(6,182,212,.2); }
+.ring-2 { width: 290px; height: 290px; border: 1.5px solid rgba(217,70,239,.1); animation-duration: 45s; animation-direction: reverse; }
 @keyframes rotate-ring { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
 
 .stat-card {
@@ -279,18 +279,72 @@ ul { list-style: none; }
 
 /* About visual */
 .about-visual { display: flex; justify-content: center; }
-.experience-showcase { width: 100%; max-width: 400px; }
+.experience-showcase { width: 100%; max-width: 370px; }
 .experience-card { padding: 2rem; margin-bottom: 2rem; }
 .exp-number { font-size: 3.2rem; font-weight: 800; line-height: 1; margin-bottom: .5rem; }
 .exp-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .7rem; }
 .exp-desc { font-size: .92rem; color: var(--text-secondary); }
-.experience-circle-graphics { width: 360px; height: 360px; border: 1px dashed rgba(255,255,255,.07); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
-.circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 160px; height: 160px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; z-index: 5; box-shadow: 0 0 45px rgba(255,255,255,.6); padding: 22px; }
+.experience-circle-graphics { width: 290px; height: 290px; border: 1px dashed rgba(255,255,255,.07); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
+.circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 90px; height: 90px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; z-index: 5; box-shadow: 0 0 30px rgba(255,255,255,.55); padding: 12px; }
 .circle-core-logo { width: 100%; height: 100%; object-fit: contain; animation: rotate-ring 60s linear infinite reverse; }
 .circle-orbit { position: absolute; width: 55px; height: 55px; border-radius: 50%; background: var(--bg-secondary); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: .72rem; font-weight: 700; color: var(--text-secondary); animation: rotate-ring 60s linear infinite reverse; }
 .orbit-1 { top: -27px; left: calc(50% - 27px); }
 .orbit-2 { bottom: 18px; left: -18px; }
 .orbit-3 { bottom: 18px; right: -18px; }
+
+/* ---- Responsive Overrides ---- */
+@media (max-width: 768px) {
+    .header { height: 68px; }
+    .nav-menu { display: none; }
+    .nav-actions .btn:not(.mobile-toggle) { display: none; }
+    .mobile-toggle { display: flex; }
+    .hero-section { padding-top: 105px; }
+    .hero-title { font-size: 2.1rem; }
+    .hero-ctas { flex-direction: column; gap: .8rem; width: 100%; }
+    .hero-card-mesh { width: 270px; height: 270px; }
+    .floating-logo-container { width: 64px; height: 64px; padding: 9px; box-shadow: 0 0 20px rgba(255,255,255,.5); }
+    .glowing-ring:first-of-type { width: 160px; height: 160px; }
+    .ring-2 { width: 230px; height: 230px; }
+    .stat-card { padding: .5rem .8rem; gap: .5rem; }
+    .stat-icon { width: 24px; height: 24px; font-size: .75rem; }
+    .stat-label { font-size: .64rem; }
+    .stat-val { font-size: .78rem; }
+    .stat-1 { top: 4%; left: -10px; }
+    .stat-2 { bottom: 18%; right: -10px; }
+    .stat-3 { bottom: -12px; left: 15%; }
+    .experience-circle-graphics { width: 240px; height: 240px; }
+    .circle-core { width: 64px; height: 64px; padding: 9px; }
+    .section-title { font-size: 1.9rem; }
+    .tabs-header-wrapper { padding: 3px; }
+    .tab-btn { padding: .6rem 1rem; font-size: .82rem; }
+    .details-card-item { grid-template-columns: 1fr; }
+    .card-icon-wrapper { grid-column: 1; margin-bottom: .8rem; }
+    .details-card-item h4, .details-card-item p, .service-sublist { grid-column: 1; }
+    .industries-grid { grid-template-columns: repeat(2,1fr); }
+    .why-grid { grid-template-columns: 1fr; }
+    .timeline-line { left: 20px; }
+    .timeline-step { padding-left: 60px; }
+    .timeline-marker { left: 0; width: 38px; height: 38px; font-size: .9rem; }
+    .cta-inner { padding: 3.5rem 1.5rem; }
+    .cta-inner h2 { font-size: 1.9rem; }
+    .cta-actions-group { flex-direction: column; width: 100%; }
+    .form-wrapper { padding: 1.8rem 1.4rem; }
+    .form-group-row { grid-template-columns: 1fr; gap: 1.4rem; }
+    .footer-links-group { grid-template-columns: 1fr 1fr; }
+    .fb-container { flex-direction: column; gap: 1rem; text-align: center; }
+    .nexscore-headline { font-size: 2rem; }
+    .saas-waitlist-form { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+    .hero-card-mesh { width: 230px; height: 230px; }
+    .floating-logo-container { width: 56px; height: 56px; padding: 7px; }
+    .experience-circle-graphics { width: 220px; height: 220px; }
+    .circle-core { width: 56px; height: 56px; padding: 7px; }
+    .industries-grid { grid-template-columns: 1fr; }
+    .footer-links-group { grid-template-columns: 1fr; }
+    .divisions-grid { gap: 1.4rem; }
+}
 
 /* ==========================================================================
    BUSINESS DIVISIONS SECTION
