@@ -122,10 +122,10 @@ ul { list-style: none; }
     color: var(--color-teal); margin-bottom: .8rem;
 }
 .section-title {
-    font-size: 2.4rem; font-weight: 800; line-height: 1.2;
-    letter-spacing: -.8px; margin-bottom: 1.4rem;
+    font-size: 2.65rem; font-weight: 800; line-height: 1.2;
+    letter-spacing: -1px; margin-bottom: 1.4rem;
 }
-.section-desc { font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 1.4rem; line-height: 1.7; }
+.section-desc { font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 1.4rem; line-height: 1.75; }
 .section-header { margin-bottom: 3.5rem; }
 
 /* ==========================================================================
@@ -276,7 +276,7 @@ ul { list-style: none; }
 .about-highlight { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.2rem; }
 .highlight-item { display: flex; gap: 1.2rem; align-items: flex-start; }
 .highlight-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(2,132,199,.1); border: 1px solid rgba(2,132,199,.2); color: var(--color-teal); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; }
-.highlight-item p { color: var(--text-secondary); font-size: .95rem; line-height: 1.5; }
+.highlight-item p { color: var(--text-secondary); font-size: 1.08rem; line-height: 1.55; }
 .highlight-item strong { color: var(--text-primary); }
 
 /* About visual */
@@ -284,8 +284,8 @@ ul { list-style: none; }
 .experience-showcase { width: 100%; max-width: 370px; }
 .experience-card { padding: 2rem; margin-bottom: 2rem; }
 .exp-number { font-size: 3.2rem; font-weight: 800; line-height: 1; margin-bottom: .5rem; }
-.exp-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .7rem; }
-.exp-desc { font-size: .92rem; color: var(--text-secondary); }
+.exp-title { font-size: 1.28rem; font-weight: 700; margin-bottom: .7rem; }
+.exp-desc { font-size: 1.02rem; color: var(--text-secondary); line-height: 1.6; }
 .experience-circle-graphics { width: 320px; height: 320px; border: 1px dashed rgba(148,163,184,.35); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
 .circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 95px; height: 95px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; z-index: 5; box-shadow: 0 0 28px rgba(15,23,42,.12); padding: 13px; }
 .circle-core-logo { width: 100%; height: 100%; object-fit: contain; animation: rotate-ring 60s linear infinite reverse; }
