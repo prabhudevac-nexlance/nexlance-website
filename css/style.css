@@ -535,7 +535,7 @@ ul { list-style: none; }
 .why-card:nth-child(8):hover { border-color: rgba(217,119,6,.5); background: linear-gradient(135deg, rgba(217,119,6,.05) 0%, #ffffff 100%); box-shadow: 0 20px 40px rgba(217,119,6,.15); transform: translateY(-8px) scale(1.02); }
 
 .why-card-top {
-    width: 100%; display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.1rem;
+    width: 100%; display: flex; justify-content: flex-end; align-items: flex-start; margin-bottom: 1.1rem;
 }
 .why-graphic {
     width: 84px; height: 75px; display: flex; align-items: center; justify-content: center;
