@@ -434,21 +434,65 @@ ul { list-style: none; }
     border: 1px solid #e2e8f0; border-radius: var(--radius-card);
     transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
-.industry-card:hover {
-    transform: translateY(-6px) scale(1.02);
-    border-color: rgba(2,132,199,.4);
-    background: linear-gradient(135deg, rgba(2,132,199,0.05) 0%, #ffffff 100%);
-    box-shadow: 0 16px 32px rgba(2,132,199,.12);
-}
+.industry-card:hover { transform: translateY(-6px) scale(1.02); }
 .ind-icon {
-    width: 50px; height: 50px; border-radius: 12px;
-    background: linear-gradient(135deg, rgba(2,132,199,.12), rgba(6,182,212,.06));
-    border: 1px solid rgba(2,132,199,.2); color: var(--color-teal);
+    width: 52px; height: 52px; border-radius: 14px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 1.35rem; margin-bottom: 1rem; transition: transform var(--transition-fast);
+    font-size: 1.4rem; margin-bottom: 1.1rem; transition: transform var(--transition-bounce), background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+    box-shadow: 0 4px 14px rgba(15,23,42,.05);
 }
-.industry-card:hover .ind-icon { transform: scale(1.15) rotate(4deg); background: var(--color-teal); color: #fff; box-shadow: 0 6px 18px rgba(2,132,199,.3); }
+.industry-card:hover .ind-icon { transform: scale(1.15) rotate(4deg); }
 .industry-card h4 { font-size: 1.02rem; font-weight: 700; color: var(--text-primary); }
+
+/* Industry Card Color Themes */
+.ind-tech .ind-icon { background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(99,102,241,0.06)); border: 1px solid rgba(99,102,241,0.3); color: #6366f1; }
+.ind-tech:hover { border-color: rgba(99,102,241,0.5); box-shadow: 0 16px 32px rgba(99,102,241,0.18); background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, #ffffff 100%); }
+.ind-tech:hover .ind-icon { background: #6366f1; color: #ffffff; box-shadow: 0 6px 18px rgba(99,102,241,0.4); }
+
+.ind-fintech .ind-icon { background: linear-gradient(135deg, rgba(16,185,129,0.18), rgba(16,185,129,0.06)); border: 1px solid rgba(16,185,129,0.3); color: #10b981; }
+.ind-fintech:hover { border-color: rgba(16,185,129,0.5); box-shadow: 0 16px 32px rgba(16,185,129,0.18); background: linear-gradient(135deg, rgba(16,185,129,0.06) 0%, #ffffff 100%); }
+.ind-fintech:hover .ind-icon { background: #10b981; color: #ffffff; box-shadow: 0 6px 18px rgba(16,185,129,0.4); }
+
+.ind-banking .ind-icon { background: linear-gradient(135deg, rgba(2,132,199,0.18), rgba(2,132,199,0.06)); border: 1px solid rgba(2,132,199,0.3); color: #0284c7; }
+.ind-banking:hover { border-color: rgba(2,132,199,0.5); box-shadow: 0 16px 32px rgba(2,132,199,0.18); background: linear-gradient(135deg, rgba(2,132,199,0.06) 0%, #ffffff 100%); }
+.ind-banking:hover .ind-icon { background: #0284c7; color: #ffffff; box-shadow: 0 6px 18px rgba(2,132,199,0.4); }
+
+/* HEALTHCARE — VIBRANT CRIMSON RED */
+.ind-healthcare .ind-icon { background: linear-gradient(135deg, rgba(239,68,68,0.18), rgba(239,68,68,0.06)); border: 1px solid rgba(239,68,68,0.3); color: #ef4444; }
+.ind-healthcare:hover { border-color: rgba(239,68,68,0.5); box-shadow: 0 16px 32px rgba(239,68,68,0.18); background: linear-gradient(135deg, rgba(239,68,68,0.06) 0%, #ffffff 100%); }
+.ind-healthcare:hover .ind-icon { background: #ef4444; color: #ffffff; box-shadow: 0 6px 18px rgba(239,68,68,0.4); }
+
+.ind-manufacturing .ind-icon { background: linear-gradient(135deg, rgba(100,116,139,0.18), rgba(100,116,139,0.06)); border: 1px solid rgba(100,116,139,0.3); color: #64748b; }
+.ind-manufacturing:hover { border-color: rgba(100,116,139,0.5); box-shadow: 0 16px 32px rgba(100,116,139,0.18); background: linear-gradient(135deg, rgba(100,116,139,0.06) 0%, #ffffff 100%); }
+.ind-manufacturing:hover .ind-icon { background: #64748b; color: #ffffff; box-shadow: 0 6px 18px rgba(100,116,139,0.4); }
+
+.ind-retail .ind-icon { background: linear-gradient(135deg, rgba(217,70,239,0.18), rgba(217,70,239,0.06)); border: 1px solid rgba(217,70,239,0.3); color: #d946ef; }
+.ind-retail:hover { border-color: rgba(217,70,239,0.5); box-shadow: 0 16px 32px rgba(217,70,239,0.18); background: linear-gradient(135deg, rgba(217,70,239,0.06) 0%, #ffffff 100%); }
+.ind-retail:hover .ind-icon { background: #d946ef; color: #ffffff; box-shadow: 0 6px 18px rgba(217,70,239,0.4); }
+
+.ind-edtech .ind-icon { background: linear-gradient(135deg, rgba(6,182,212,0.18), rgba(6,182,212,0.06)); border: 1px solid rgba(6,182,212,0.3); color: #06b6d4; }
+.ind-edtech:hover { border-color: rgba(6,182,212,0.5); box-shadow: 0 16px 32px rgba(6,182,212,0.18); background: linear-gradient(135deg, rgba(6,182,212,0.06) 0%, #ffffff 100%); }
+.ind-edtech:hover .ind-icon { background: #06b6d4; color: #ffffff; box-shadow: 0 6px 18px rgba(6,182,212,0.4); }
+
+.ind-logistics .ind-icon { background: linear-gradient(135deg, rgba(245,158,11,0.18), rgba(245,158,11,0.06)); border: 1px solid rgba(245,158,11,0.3); color: #f59e0b; }
+.ind-logistics:hover { border-color: rgba(245,158,11,0.5); box-shadow: 0 16px 32px rgba(245,158,11,0.18); background: linear-gradient(135deg, rgba(245,158,11,0.06) 0%, #ffffff 100%); }
+.ind-logistics:hover .ind-icon { background: #f59e0b; color: #ffffff; box-shadow: 0 6px 18px rgba(245,158,11,0.4); }
+
+.ind-hospitality .ind-icon { background: linear-gradient(135deg, rgba(244,63,94,0.18), rgba(244,63,94,0.06)); border: 1px solid rgba(244,63,94,0.3); color: #f43f5e; }
+.ind-hospitality:hover { border-color: rgba(244,63,94,0.5); box-shadow: 0 16px 32px rgba(244,63,94,0.18); background: linear-gradient(135deg, rgba(244,63,94,0.06) 0%, #ffffff 100%); }
+.ind-hospitality:hover .ind-icon { background: #f43f5e; color: #ffffff; box-shadow: 0 6px 18px rgba(244,63,94,0.4); }
+
+.ind-pro-services .ind-icon { background: linear-gradient(135deg, rgba(139,92,246,0.18), rgba(139,92,246,0.06)); border: 1px solid rgba(139,92,246,0.3); color: #8b5cf6; }
+.ind-pro-services:hover { border-color: rgba(139,92,246,0.5); box-shadow: 0 16px 32px rgba(139,92,246,0.18); background: linear-gradient(135deg, rgba(139,92,246,0.06) 0%, #ffffff 100%); }
+.ind-pro-services:hover .ind-icon { background: #8b5cf6; color: #ffffff; box-shadow: 0 6px 18px rgba(139,92,246,0.4); }
+
+.ind-startups .ind-icon { background: linear-gradient(135deg, rgba(255,87,34,0.18), rgba(255,87,34,0.06)); border: 1px solid rgba(255,87,34,0.3); color: #ff5722; }
+.ind-startups:hover { border-color: rgba(255,87,34,0.5); box-shadow: 0 16px 32px rgba(255,87,34,0.18); background: linear-gradient(135deg, rgba(255,87,34,0.06) 0%, #ffffff 100%); }
+.ind-startups:hover .ind-icon { background: #ff5722; color: #ffffff; box-shadow: 0 6px 18px rgba(255,87,34,0.4); }
+
+.ind-enterprise .ind-icon { background: linear-gradient(135deg, rgba(51,65,85,0.18), rgba(51,65,85,0.06)); border: 1px solid rgba(51,65,85,0.3); color: #334155; }
+.ind-enterprise:hover { border-color: rgba(51,65,85,0.5); box-shadow: 0 16px 32px rgba(51,65,85,0.18); background: linear-gradient(135deg, rgba(51,65,85,0.06) 0%, #ffffff 100%); }
+.ind-enterprise:hover .ind-icon { background: #334155; color: #ffffff; box-shadow: 0 6px 18px rgba(51,65,85,0.4); }
 
 /* ==========================================================================
    WHY NEXLANCE
