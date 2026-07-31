@@ -436,13 +436,15 @@ ul { list-style: none; }
 }
 .industry-card:hover { transform: translateY(-6px) scale(1.02); }
 .ind-icon {
-    width: 52px; height: 52px; border-radius: 14px;
+    width: 58px; height: 58px; border-radius: 16px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 1.4rem; margin-bottom: 1.1rem; transition: transform var(--transition-bounce), background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
-    box-shadow: 0 4px 14px rgba(15,23,42,.05);
+    margin-bottom: 1.1rem; transition: transform var(--transition-bounce), background var(--transition-fast), box-shadow var(--transition-fast);
+    box-shadow: 0 6px 18px rgba(15,23,42,.06);
 }
-.industry-card:hover .ind-icon { transform: scale(1.15) rotate(4deg); }
-.industry-card h4 { font-size: 1.02rem; font-weight: 700; color: var(--text-primary); }
+.ind-icon svg { width: 42px; height: 42px; transition: transform var(--transition-bounce); }
+.industry-card:hover .ind-icon { transform: scale(1.12) translateY(-2px); }
+.industry-card:hover .ind-icon svg { transform: scale(1.08); }
+.industry-card h4 { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); }
 
 /* Industry Card Color Themes */
 .ind-tech .ind-icon { background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(99,102,241,0.06)); border: 1px solid rgba(99,102,241,0.3); color: #6366f1; }
