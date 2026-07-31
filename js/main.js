@@ -99,14 +99,26 @@ document.addEventListener('DOMContentLoaded', () => {
     timelineSteps.forEach(step => timelineObserver.observe(step));
 
     /* ==========================================================================
-       6. GLOW CARDS — Mouse tracking
+       6. GLOW CARDS — Mouse Tracking & 3D Tilt Reflections
        ========================================================================== */
-    const glowCards = document.querySelectorAll('.glow-card');
+    const glowCards = document.querySelectorAll('.glow-card, .division-card, .industry-card, .why-card');
     glowCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
-            card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
-            card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -4;
+            const rotateY = ((x - centerX) / centerX) * 4;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
         });
     });
 
