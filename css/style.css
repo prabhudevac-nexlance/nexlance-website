@@ -95,8 +95,8 @@ ul { list-style: none; }
 .btn-outline { border: 1.5px solid var(--color-indigo); color: var(--color-indigo); }
 .btn-outline:hover { background: var(--color-indigo); color: #ffffff; box-shadow: 0 4px 15px rgba(79,70,229,.25); transform: translateY(-2px); }
 .btn-sm  { padding: .55rem 1.1rem; font-size: .88rem; }
-.btn-md  { padding: .8rem 1.6rem; font-size: .95rem; }
-.btn-lg  { padding: 1rem 2rem; font-size: 1rem; }
+.btn-md  { padding: .85rem 1.7rem; font-size: 1rem; font-weight: 600; }
+.btn-lg  { padding: 1.1rem 2.4rem; font-size: 1.15rem; font-weight: 700; }
 .btn-full { width: 100%; }
 .icon-right { transition: transform var(--transition-fast); }
 .btn:hover .icon-right { transform: translateX(4px); }
