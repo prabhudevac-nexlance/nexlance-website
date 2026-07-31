@@ -162,7 +162,8 @@ ul { list-style: none; }
     font-size: 2.15rem;
     font-weight: 900;
     letter-spacing: -0.8px;
-    background: linear-gradient(135deg, #0f172a 0%, #0284c7 50%, #4f46e5 100%);
+    color: #7c3aed;
+    background: linear-gradient(135deg, #5b21b6 0%, #7c3aed 55%, #9333ea 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform var(--transition-fast);
