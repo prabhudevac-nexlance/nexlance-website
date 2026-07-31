@@ -286,13 +286,13 @@ ul { list-style: none; }
 .exp-number { font-size: 3.2rem; font-weight: 800; line-height: 1; margin-bottom: .5rem; }
 .exp-title { font-size: 1.28rem; font-weight: 700; margin-bottom: .7rem; }
 .exp-desc { font-size: 1.02rem; color: var(--text-secondary); line-height: 1.6; }
-.experience-circle-graphics { width: 320px; height: 320px; border: 1px dashed rgba(148,163,184,.35); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
+.experience-circle-graphics { width: 330px; height: 330px; border: 1px dashed rgba(148,163,184,.35); border-radius: 50%; position: relative; margin: 0 auto; animation: rotate-ring 60s linear infinite; }
 .circle-core { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 95px; height: 95px; border-radius: 50%; background: #ffffff; display: flex; align-items: center; justify-content: center; z-index: 5; box-shadow: 0 0 28px rgba(15,23,42,.12); padding: 13px; }
 .circle-core-logo { width: 100%; height: 100%; object-fit: contain; animation: rotate-ring 60s linear infinite reverse; }
-.circle-orbit { position: absolute; width: 86px; height: 86px; border-radius: 50%; background: #ffffff; border: 1px solid #cbd5e1; display: flex; align-items: center; justify-content: center; font-size: .82rem; font-weight: 700; color: var(--text-primary); box-shadow: 0 6px 20px rgba(15,23,42,.08); animation: rotate-ring 60s linear infinite reverse; text-align: center; padding: 4px; white-space: nowrap; }
-.orbit-1 { top: -43px; left: calc(50% - 43px); }
-.orbit-2 { bottom: 18px; left: -32px; }
-.orbit-3 { bottom: 18px; right: -32px; }
+.circle-orbit { position: absolute; width: 98px; height: 98px; border-radius: 50%; background: #ffffff; border: 1px solid #cbd5e1; display: flex; align-items: center; justify-content: center; font-size: .84rem; font-weight: 700; color: var(--text-primary); box-shadow: 0 6px 22px rgba(15,23,42,.08); animation: rotate-ring 60s linear infinite reverse; text-align: center; padding: 6px; white-space: nowrap; }
+.orbit-1 { top: -49px; left: calc(50% - 49px); }
+.orbit-2 { bottom: 18px; left: -36px; }
+.orbit-3 { bottom: 18px; right: -36px; }
 
 /* ---- Responsive Overrides ---- */
 @media (max-width: 768px) {
