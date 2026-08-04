@@ -1,12 +1,10 @@
 from PIL import Image
 
-src_path = 'C:/Users/chinn/.gemini/antigravity/brain/b8255ad3-e851-4c06-9c90-5def38d5dff0/.user_uploaded/media_1785840685123.jpg'
+src_path = 'C:/Users/chinn/.gemini/antigravity/brain/b8255ad3-e851-4c06-9c90-5def38d5dff0/.user_uploaded/media_1785841331335.jpg'
 dest_path = 'C:/Users/chinn/.gemini/antigravity/scratch/nexlance-website/assets/logo.png'
 
 img = Image.open(src_path).convert('RGBA')
-width, height = img.size
 
-# Process pixels: remove light background and make logo pure white with smooth anti-aliasing
 new_pixels = []
 for r, g, b, a in img.getdata():
     luminance = (0.299 * r + 0.587 * g + 0.114 * b)
