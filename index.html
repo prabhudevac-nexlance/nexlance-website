@@ -1,1053 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nexlance is a Business Solutions Company with two core divisions — Nexlance Services (HR, BPO, Collections) and Nexlance Products (AI-powered SaaS). Empowering businesses through People, Process & Performance.">
-    <meta name="keywords" content="Nexlance, Business Solutions, HR Solutions, BPO Services, Collections, NexScore, Workforce Solutions, Staffing, Payroll">
-    <meta property="og:title" content="Nexlance | Empowering Businesses Through People, Process & Performance">
-    <meta property="og:description" content="Nexlance is a Business Solutions Company helping organizations build high-performing teams, streamline operations, and drive growth.">
-    <title>Nexlance | Business Solutions Company — Services & Products</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexlance — Where Trust Compounds Into Growth</title>
+  <meta name="description" content="Nexlance connects workforce services with NexScore — the candidate trust layer. Pre-seed raise details, roadmap, and compounding growth model.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Ambient Background Glows -->
-    <div class="ambient-glow bg-glow-1"></div>
-    <div class="ambient-glow bg-glow-2"></div>
-    <div class="ambient-glow bg-glow-3"></div>
-
-    <!-- ===== HEADER / NAVIGATION ===== -->
-    <header class="header" id="header">
-        <div class="container header-container">
-            <a href="#" class="logo-group">
-                <img src="assets/logo.png" alt="Nexlance Logo" class="logo-img">
-                <span class="logo-name">Nexlance</span>
-            </a>
-
-            <nav class="nav-menu">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#services" class="nav-link">Services</a>
-                <div class="nav-dropdown">
-                    <a href="#nexscore" class="nav-link nav-dropdown-trigger">
-                        Products <i class="fa-solid fa-chevron-down nav-arrow"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a href="#nexscore" class="dropdown-item">
-                            <div class="dd-icon"><i class="fa-solid fa-rocket"></i></div>
-                            <div class="dd-content">
-                                <span class="dd-title">NexScore</span>
-                                <span class="dd-desc">AI-powered hiring platform</span>
-                            </div>
-                            <span class="dd-badge">Soon</span>
-                        </a>
-                    </div>
-                </div>
-                <a href="#industries" class="nav-link">Industries</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-
-            <div class="nav-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Schedule Consultation</a>
-                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-drawer" id="mobile-drawer">
-        <div class="mobile-drawer-header">
-            <a href="#" class="logo-group">
-                <img src="assets/logo.png" alt="Nexlance Logo" class="logo-img">
-                <span class="logo-name">Nexlance</span>
-            </a>
-            <button class="close-drawer" id="close-drawer" aria-label="Close">&times;</button>
-        </div>
-        <nav class="mobile-nav">
-            <a href="#" class="mobile-link">Home</a>
-            <a href="#about" class="mobile-link">About</a>
-            <a href="#services" class="mobile-link">Services</a>
-            <a href="#industries" class="mobile-link">Industries</a>
-            <a href="#contact" class="mobile-link">Contact</a>
-            <a href="#contact" class="btn btn-primary btn-full mt-md">Schedule Consultation</a>
-        </nav>
+<nav>
+  <div class="wrap">
+    <div class="brand">
+      <a href="#"><img src="assets/logo.png" alt="Nexlance Logo"></a>
     </div>
+    <ul>
+      <li><a href="#opportunity">Opportunity</a></li>
+      <li><a href="#ask">The Ask</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#loop">Why It Compounds</a></li>
+    </ul>
+    <a class="cta" href="#contact">Talk to us</a>
+  </div>
+</nav>
 
-    <!-- ===== HERO SECTION ===== -->
-    <section class="hero-section" id="home">
-        <div class="container hero-container">
-            <div class="hero-content scroll-reveal fade-in-up">
-                <div class="badge-premium">
-                    <span class="badge-dot"></span>
-                    Business Solutions Company
-                </div>
-                <h1 class="hero-title">
-                    Empowering Businesses Through <span class="gradient-text text-animate">People, Process & Performance</span>
-                </h1>
-                <p class="hero-subtitle">
-                    We help organizations build high-performing teams, streamline business operations, and drive long-term growth through integrated business solutions and technology.
-                </p>
-                <div class="hero-ctas">
-                    <a href="#services" class="btn btn-primary btn-lg">
-                        Explore Our Services <i class="fa-solid fa-arrow-right icon-right"></i>
-                    </a>
-                    <a href="#nexscore" class="btn btn-secondary btn-lg">
-                        <i class="fa-solid fa-rocket"></i> Discover Our Products
-                    </a>
-                </div>
-                <div class="hero-trust-row">
-                    <span class="trust-item"><i class="fa-solid fa-shield-check"></i> Compliance-Driven</span>
-                    <span class="trust-item"><i class="fa-solid fa-bolt"></i> Technology-Enabled</span>
-                    <span class="trust-item"><i class="fa-solid fa-handshake"></i> Partnership Mindset</span>
-                </div>
-            </div>
-            <div class="hero-visual scroll-reveal fade-in-up delay-200">
-                <div class="hero-card-mesh">
-                    <div class="floating-logo-container">
-                        <img src="assets/logo.png" alt="Nexlance" class="floating-logo">
-                        <div class="glowing-ring"></div>
-                        <div class="glowing-ring ring-2"></div>
-                    </div>
-                    <div class="stat-card stat-1">
-                        <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
-                        <div class="stat-info">
-                            <span class="stat-label">Workforce Solutions</span>
-                            <span class="stat-val">End-to-End</span>
-                        </div>
-                    </div>
-                    <div class="stat-card stat-2">
-                        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <div class="stat-info">
-                            <span class="stat-label">Business Growth</span>
-                            <span class="stat-val">Accelerated</span>
-                        </div>
-                    </div>
-                    <div class="stat-card stat-3">
-                        <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
-                        <div class="stat-info">
-                            <span class="stat-label">SaaS Platform</span>
-                            <span class="stat-val">Launching Soon</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about" aria-label="Scroll Down"><span class="mouse-wheel"></span></a>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> PRE-SEED &nbsp;·&nbsp; SERVICES + SAAS</div>
+      <h1>Where capital becomes<br><em>compounding growth.</em></h1>
+      <p class="lead">Nexlance already runs a revenue-generating workforce services business. This raise builds the technology layer — NexScore and the platform — that turns that trust into a scalable company.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#ask">See what this raise unlocks</a>
+        <a class="btn btn-ghost" href="#contact">Schedule a conversation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">2</div><div class="lbl">Business lines: Services &amp; SaaS</div></div>
+        <div class="stat"><div class="num">16+</div><div class="lbl">Industries served today</div></div>
+        <div class="stat"><div class="num">4</div><div class="lbl">Build phases to platform launch</div></div>
+      </div>
+    </div>
+    <div class="hero-mark">
+      <div class="aura"></div>
+      <img src="assets/logo.png" alt="Nexlance Mark">
+    </div>
+  </div>
+</section>
 
-    <!-- ===== ABOUT NEXLANCE ===== -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-grid">
-                <div class="about-content scroll-reveal fade-in-up">
-                    <span class="section-tag">About Nexlance</span>
-                    <h2 class="section-title">A Business Solutions Company Built for Modern Organizations</h2>
-                    <p class="section-desc">
-                        Nexlance is a Business Solutions Company with two core divisions
-                    </p>
-                    <p class="section-desc">
-                        <strong>Nexlance Services</strong> and <strong>Nexlance Products</strong>. We help organizations overcome workforce and operational challenges while building the technology that simplifies how businesses grow.
-                    </p>
-                    <p class="section-desc">
-                        Rather than offering standalone services, we partner with organizations to understand their goals and deliver tailored solutions that improve productivity, reduce operational overhead, and support sustainable growth.
-                    </p>
-                    <div class="about-highlight">
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><i class="fa-solid fa-layer-group"></i></div>
-                            <p><strong>Two Core Divisions:</strong> Nexlance Services (operational solutions) + Nexlance Products (AI-powered SaaS).</p>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon"><i class="fa-solid fa-atom"></i></div>
-                            <p><strong>Technology-Driven:</strong> We embed technology into every service and product we build for clients.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual scroll-reveal fade-in-up delay-200">
-                    <div class="experience-showcase">
-                        <div class="experience-card glow-card">
-                            <div class="exp-number gradient-text">P³</div>
-                            <div class="exp-title">Our Core Philosophy</div>
-                            <div class="exp-desc">Aligning <strong>People</strong>, optimizing <strong>Processes</strong>, and driving ultimate <strong>Performance</strong>.</div>
-                        </div>
-                        <div class="experience-circle-graphics">
-                            <div class="circle-core"><img src="assets/logo.png" alt="Nexlance Logo" class="circle-core-logo"></div>
-                            <div class="circle-orbit orbit-1">People</div>
-                            <div class="circle-orbit orbit-2">Process</div>
-                            <div class="circle-orbit orbit-3">Performance</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- OPPORTUNITY -->
+<section id="opportunity">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="marker"><img src="assets/logo.png" alt="Marker Icon"><span>The Opportunity</span></div>
+      <h2>A large market that's still run on spreadsheets and email</h2>
+      <p>Staffing, HR operations, and business process outsourcing are growing fast in India — but most of it is still delivered through disconnected vendors and manual workflows. That gap is what Nexlance is built to close.</p>
+    </div>
+    <div class="stat-grid reveal">
+      <div class="stat-card">
+        <div class="big">$18.1B → $48.5B</div>
+        <div class="desc">India staffing &amp; recruitment market, 2022–2030, growing at a 13.2% CAGR.</div>
+      </div>
+      <div class="stat-card">
+        <div class="big">$48.6B → $92.4B</div>
+        <div class="desc">India BPO services market, 2025–2033, growing at roughly an 8.4% CAGR.</div>
+      </div>
+      <div class="stat-card">
+        <div class="big">Fragmented</div>
+        <div class="desc">No dominant platform yet connects hiring, verification, onboarding, and trust in one place.</div>
+      </div>
+    </div>
+    <p class="source-note">Sources: Business Market Insights (staffing &amp; recruitment); Phoenix Research (BPO), 2026 industry outlooks.</p>
+    <div class="industry-row reveal">
+      <div class="chip">IT</div><div class="chip">FinTech</div><div class="chip">BFSI</div><div class="chip">NBFC</div>
+      <div class="chip">Healthcare</div><div class="chip">Manufacturing</div><div class="chip">Retail &amp; E-commerce</div>
+      <div class="chip">EdTech</div><div class="chip">Logistics</div><div class="chip">Telecom</div><div class="chip">Hospitality</div>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== TWO BUSINESS DIVISIONS ===== -->
-    <section id="divisions" class="divisions-section">
-        <div class="container">
-            <div class="section-header scroll-reveal fade-in-up">
-                <span class="section-tag">Our Business Divisions</span>
-                <h2 class="section-title text-center">Two Divisions<br>One Integrated Vision</h2>
-                <p class="section-desc text-center max-w-xl">
-                    Nexlance operates through two powerful divisions that together create a complete ecosystem for business growth.
-                </p>
-            </div>
-            <div class="divisions-grid scroll-reveal fade-in-up delay-100">
-                <!-- Division 1: Services -->
-                <div class="division-card glow-card division-services">
-                    <div class="division-badge">Division 01</div>
-                    <div class="division-icon-wrap services-icon">
-                        <i class="fa-solid fa-briefcase"></i>
-                    </div>
-                    <h3 class="division-title">Nexlance Services</h3>
-                    <p class="division-desc">Helping businesses solve workforce and operational challenges through expert-driven, compliance-focused services.</p>
-                    <ul class="division-list">
-                        <li><i class="fa-solid fa-check"></i> HR & Workforce Solutions</li>
-                        <li><i class="fa-solid fa-check"></i> BPO Services</li>
-                        <li><i class="fa-solid fa-check"></i> Collections & Recovery Services</li>
-                    </ul>
-                    <a href="#services" class="btn btn-primary btn-md division-cta">Explore Services <i class="fa-solid fa-arrow-right icon-right"></i></a>
-                </div>
-                <!-- Division 2: Products -->
-                <div class="division-card glow-card division-products">
-                    <div class="division-badge">Division 02</div>
-                    <div class="division-icon-wrap products-icon">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <h3 class="division-title">Nexlance Products</h3>
-                    <div class="division-cta-wrap" style="margin-top: 1rem;">
-                        <span class="launch-pill" style="font-size: .92rem; padding: .5rem 1.2rem;"><i class="fa-solid fa-satellite-dish"></i> Launching Soon</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- THE ASK -->
+<section id="ask" class="on-dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="marker"><img src="assets/logo.png" alt="Marker Icon"><span>The Ask</span></div>
+      <h2>What this raise is for</h2>
+      <p>Nexlance is raising a pre-seed round to build the Nexlance SaaS platform while continuing to grow the services business that already funds the company. Allocation below is indicative and will be finalized with investors.</p>
+    </div>
+    <div class="ask-layout">
+      <div class="reveal">
+        <p style="font-size:15px; color:var(--muted-dark); line-height:1.7;">
+          The services business — HR &amp; Workforce, BPO, and Collections — gives Nexlance real client relationships, cash flow, and domain expertise from day one. This raise is what turns that foundation into a product: a platform where NexScore becomes the trust layer employers and candidates both rely on.
+        </p>
+        <div class="ask-note">Figures are planning estimates for discussion purposes, not a committed budget or term sheet.</div>
+      </div>
+      <div class="alloc reveal">
+        <div class="alloc-row"><div class="name">Product &amp; NexScore</div><div class="bar-track"><div class="bar-fill" data-pct="40"></div></div><div class="pct">40%</div></div>
+        <div class="alloc-row"><div class="name">Team &amp; Talent</div><div class="bar-track"><div class="bar-fill" data-pct="25"></div></div><div class="pct">25%</div></div>
+        <div class="alloc-row"><div class="name">Go-to-Market</div><div class="bar-track"><div class="bar-fill" data-pct="20"></div></div><div class="pct">20%</div></div>
+        <div class="alloc-row"><div class="name">Compliance &amp; Ops</div><div class="bar-track"><div class="bar-fill" data-pct="10"></div></div><div class="pct">10%</div></div>
+        <div class="alloc-row"><div class="name">Runway Buffer</div><div class="bar-track"><div class="bar-fill" data-pct="5"></div></div><div class="pct">5%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== SERVICES SECTION ===== -->
-    <section id="services" class="solutions-section">
-        <div class="container">
-            <div class="section-header scroll-reveal fade-in-up">
-                <span class="section-tag">Nexlance Services</span>
-                <h2 class="section-title text-center">Comprehensive Business Services for Modern Organizations</h2>
-                <p class="section-desc text-center max-w-xl">
-                    Expert-driven, compliance-focused services that solve workforce and operational challenges at every stage of your business.
-                </p>
-            </div>
+<!-- ROADMAP -->
+<section id="roadmap">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="marker"><img src="assets/logo.png" alt="Marker Icon"><span>What It Unlocks</span></div>
+      <h2>From services revenue to a platform company</h2>
+      <p>Each phase is scoped and sequenced — this is the build plan the raise funds.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="phase">Now</div>
+        <h3>Services fund the foundation</h3>
+        <p>HR &amp; Workforce, BPO, and Collections continue generating revenue and deepening client relationships across 16+ industries.</p>
+      </div>
+      <div class="tl-item">
+        <div class="phase">MVP 1</div>
+        <h3>Core platform &amp; NexScore foundation</h3>
+        <p>Registration, the recruitment ATS, employee onboarding, and the first version of NexScore — the candidate trust score — go live.</p>
+      </div>
+      <div class="tl-item">
+        <div class="phase">MVP 2</div>
+        <h3>Depth &amp; operations</h3>
+        <p>Multi-profile candidate accounts, vendor and asset workflows, and the operational tooling that supports scale.</p>
+      </div>
+      <div class="tl-item">
+        <div class="phase">Release 1.0+</div>
+        <h3>Verification &amp; integration layer</h3>
+        <p>Digital e-signature, advanced background verification, and integrations (APIs, SSO, ATS plugins) that make Nexlance embeddable in any employer's stack.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <!-- Tab Navigation -->
-            <div class="tab-control-container scroll-reveal fade-in-up delay-100">
-                <div class="tabs-header-wrapper">
-                    <button class="tab-btn active" data-tab="hr-solutions">
-                        <i class="fa-solid fa-users-gear tab-icon"></i> HR & Workforce
-                    </button>
-                    <button class="tab-btn" data-tab="bpo-services">
-                        <i class="fa-solid fa-headset tab-icon"></i> BPO Services
-                    </button>
-                    <button class="tab-btn" data-tab="collections-services">
-                        <i class="fa-solid fa-receipt tab-icon"></i> Collections & Recovery
-                    </button>
-                </div>
-            </div>
+<!-- COMPOUNDING LOOP -->
+<section id="loop" class="on-dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="marker"><img src="assets/logo.png" alt="Marker Icon"><span>Why It Compounds</span></div>
+      <h2>Trust is the asset that compounds</h2>
+      <p>Every hire, verification, and onboarding builds NexScore's dataset — which makes the next hire faster and more trustworthy. That loop is the moat.</p>
+    </div>
+    <div class="loop-wrap">
+      <svg class="loop-svg reveal" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="loopGrad" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#FBC609"/>
+            <stop offset="28%" stop-color="#3E9BD2"/>
+            <stop offset="52%" stop-color="#8C559F"/>
+            <stop offset="74%" stop-color="#EF7D73"/>
+            <stop offset="100%" stop-color="#F49E5B"/>
+          </linearGradient>
+        </defs>
+        <path id="infinityPath" d="M240,160 C240,110 195,70 148,70 C93,70 60,113 60,160 C60,207 93,250 148,250 C210,250 222,192 240,160 C258,128 270,70 332,70 C387,70 420,113 420,160 C420,207 387,250 332,250 C285,250 240,210 240,160 Z"
+          stroke="url(#loopGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <circle cx="148" cy="70" r="7" fill="#FBC609"/>
+        <circle cx="332" cy="70" r="7" fill="#8C559F"/>
+        <circle cx="420" cy="160" r="7" fill="#F49E5B"/>
+        <circle cx="148" cy="250" r="7" fill="#EF7D73"/>
+      </svg>
+      <div class="loop-points reveal">
+        <div class="loop-point"><div class="idx">1</div><div><h4>Services build the client base</h4><p>Real employers, real hires, real workforce data — flowing through Nexlance's HR &amp; BPO teams today.</p></div></div>
+        <div class="loop-point"><div class="idx">2</div><div><h4>NexScore captures verified trust</h4><p>KYC, background checks, and performance signals accumulate into a portable candidate score.</p></div></div>
+        <div class="loop-point"><div class="idx">3</div><div><h4>Employers hire faster, with confidence</h4><p>A trusted NexID reduces screening time and risk — making Nexlance the default lookup before a hire.</p></div></div>
+        <div class="loop-point"><div class="idx">4</div><div><h4>More usage, more signal, more moat</h4><p>Each cycle strengthens the score's accuracy — a data advantage that is hard to replicate cold.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="tabs-body-container scroll-reveal fade-in-up delay-200">
+<!-- TRUST -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="marker"><img src="assets/logo.png" alt="Marker Icon"><span>Built On</span></div>
+      <h2>Why Nexlance, why now</h2>
+    </div>
+    <div class="badge-grid reveal">
+      <div class="badge"><h4>Business-first</h4><p>Every engagement starts with the client's objective, not a standard package.</p></div>
+      <div class="badge"><h4>Compliance-led</h4><p>Collections, payroll, and HR practices built around regulatory discipline from day one.</p></div>
+      <div class="badge"><h4>Revenue today</h4><p>The services business is live and billing — the platform isn't a bet on an unproven idea.</p></div>
+      <div class="badge"><h4>Long-term view</h4><p>Partnerships, not transactions — the same lens applied to how we build the product.</p></div>
+    </div>
+  </div>
+</section>
 
-                <!-- Tab 1: HR & Workforce -->
-                <div class="tab-pane active" id="hr-solutions">
-                    <div class="solutions-grid">
-                        <div class="solution-info-column">
-                            <h3 class="solution-heading">HR & Workforce Solutions</h3>
-                            <p class="solution-subtext">
-                                People are at the heart of every successful organization. Our HR & Workforce Solutions help businesses attract, manage, develop, and retain exceptional talent while building efficient HR processes for long-term growth.
-                            </p>
-                            <div class="feature-bullets">
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> End-to-End Talent Pipelines</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Compliant Policy Frameworks</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Seamless Payroll Operations</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Startup HR Setup to Enterprise Scale</div>
-                            </div>
-                            <a href="#contact" class="btn btn-primary btn-md mt-lg">Get HR Support <i class="fa-solid fa-chevron-right ml-sm"></i></a>
-                        </div>
-                        <div class="solution-details-cards">
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-user-tie"></i></div>
-                                <h4>Recruitment & Staffing</h4>
-                                <p>Matching talent to your goals, culture, and long-term vision.</p>
-                                <ul class="service-sublist">
-                                    <li>Permanent Hiring</li>
-                                    <li>Leadership & Executive Hiring</li>
-                                    <li>Bulk & Volume Hiring</li>
-                                    <li>Contract Staffing</li>
-                                    <li>Specialized Talent Acquisition</li>
-                                </ul>
-                            </div>
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                                <h4>Payroll Management</h4>
-                                <p>Accurate, compliant, and timely payroll processing at any scale.</p>
-                                <ul class="service-sublist">
-                                    <li>End-to-End Payroll Processing</li>
-                                    <li>Statutory Compliance</li>
-                                    <li>Payslip Generation</li>
-                                    <li>Reimbursements & Deductions</li>
-                                </ul>
-                            </div>
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-chalkboard-user"></i></div>
-                                <h4>HR Consulting & Operations</h4>
-                                <p>Build robust HR frameworks aligned with your business strategy.</p>
-                                <ul class="service-sublist">
-                                    <li>HR Strategy & Policies</li>
-                                    <li>Performance Management</li>
-                                    <li>Organizational Development</li>
-                                    <li>Workforce Admin & Documentation</li>
-                                    <li>Attendance & Leave Management</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-cta reveal">
+      <h2>Let's talk about<br>building this together.</h2>
+      <p>If you back workforce, HR-tech, or trust infrastructure, we'd like to show you the platform roadmap and the numbers behind it.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:collab@nexlance.co.in">Email collab@nexlance.co.in</a>
+        <a class="btn btn-ghost" href="https://www.nexlance.co.in">Visit nexlance.co.in</a>
+      </div>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="assets/logo.png" alt="Nexlance Logo"></div>
+      <div class="footer-contacts">
+        <div><span>Email</span><a href="mailto:collab@nexlance.co.in">collab@nexlance.co.in</a></div>
+        <div><span>Website</span><a href="https://www.nexlance.co.in">www.nexlance.co.in</a></div>
+        <div><span>Location</span><p>Electronic City, Bengaluru, Karnataka</p></div>
+      </div>
+    </div>
+    <p class="fine">This page is a company overview for discussion purposes only and does not constitute an offer to sell securities. Market figures are drawn from third-party 2026 industry research and are estimates, not guarantees. Fund allocation and roadmap are indicative and subject to change.</p>
+  </div>
+</footer>
 
-                <!-- Tab 2: BPO Services -->
-                <div class="tab-pane" id="bpo-services">
-                    <div class="solutions-grid">
-                        <div class="solution-info-column">
-                            <h3 class="solution-heading">BPO Services</h3>
-                            <p class="solution-subtext">
-                                Efficient back-office operations are critical for maintaining productivity and customer satisfaction. Our BPO solutions help businesses reduce costs, improve efficiency, and enhance service quality.
-                            </p>
-                            <div class="feature-bullets">
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> 24/7 Multi-Channel Support</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Scalable Teams On-Demand</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Trained, Quality-Assured Agents</div>
-                                <div class="bullet-item"><i class="fa-solid fa-check text-accent"></i> Rapid Onboarding & Ramp-Up</div>
-                            </div>
-                            <a href="#contact" class="btn btn-primary btn-md mt-lg">Optimize Operations <i class="fa-solid fa-chevron-right ml-sm"></i></a>
-                        </div>
-                        <div class="solution-details-cards">
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-phone-volume"></i></div>
-                                <h4>Customer Support</h4>
-                                <p>Retain and delight customers with professional, reliable support.</p>
-                                <ul class="service-sublist">
-                                    <li>Voice Support</li>
-                                    <li>Email Support</li>
-                                    <li>Chat Support</li>
-                                    <li>Omni-Channel Service</li>
-                                </ul>
-                            </div>
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-network-wired"></i></div>
-                                <h4>Back Office Operations</h4>
-                                <p>Automate and optimize your internal workflows and data processes.</p>
-                                <ul class="service-sublist">
-                                    <li>Data Processing</li>
-                                    <li>Business Process Outsourcing</li>
-                                    <li>Back Office Administration</li>
-                                    <li>Document Management</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<script src="js/main.js"></script>
 
-                <!-- Tab 3: Collections & Recovery -->
-                <div class="tab-pane" id="collections-services">
-                    <div class="solutions-grid">
-                        <div class="solution-info-column">
-                            <h3 class="solution-heading">Collections & Recovery Services</h3>
-                            <p class="solution-subtext">
-                                Ethical recovery solutions built on trust, compliance, and professionalism. We help financial organizations improve recovery rates while protecting customer relationships and brand reputation.
-                            </p>
-                            <div class="compliance-badge">
-                                <i class="fa-solid fa-shield-halved"></i> Fully Compliant with Banking & FinTech Regulations
-                            </div>
-                            <a href="#contact" class="btn btn-primary btn-md mt-lg">Discuss Recovery Plans <i class="fa-solid fa-chevron-right ml-sm"></i></a>
-                        </div>
-                        <div class="solution-details-cards">
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                                <h4>Collections Operations</h4>
-                                <p>Structured, compliant recovery across all stages of the debt lifecycle.</p>
-                                <ul class="service-sublist">
-                                    <li>Early Stage Collections</li>
-                                    <li>Soft Collections</li>
-                                    <li>Recovery Operations</li>
-                                    <li>Portfolio Management</li>
-                                    <li>Compliance-Based Recovery</li>
-                                </ul>
-                            </div>
-                            <div class="details-card-item">
-                                <div class="card-icon-wrapper"><i class="fa-solid fa-building-columns"></i></div>
-                                <h4>Industries Served</h4>
-                                <p>Specialized recovery solutions for regulated financial sectors.</p>
-                                <div class="industry-tags-group">
-                                    <span class="ind-tag">Banks</span>
-                                    <span class="ind-tag">NBFCs</span>
-                                    <span class="ind-tag">FinTech</span>
-                                    <span class="ind-tag">Telecom</span>
-                                    <span class="ind-tag">Utilities</span>
-                                    <span class="ind-tag">Consumer Finance</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== INDUSTRIES WE SERVE ===== -->
-    <section id="industries" class="industries-section">
-        <div class="container">
-            <div class="section-header scroll-reveal fade-in-up">
-                <span class="section-tag">Industries We Serve</span>
-                <h2 class="section-title text-center">Tailored Solutions Across Every Sector</h2>
-                <p class="section-desc text-center max-w-xl">
-                    From early-stage startups to established enterprises, we deliver across every major industry vertical, & Many More...
-                </p>
-            </div>
-            <div class="industries-grid scroll-reveal fade-in-up delay-100">
-                <!-- 1. Technology -->
-                <div class="industry-card ind-tech glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <rect x="14" y="14" width="20" height="20" rx="4" fill="#6366f1" fill-opacity="0.2" stroke="#4f46e5" stroke-width="2.5"/>
-                            <circle cx="24" cy="24" r="5" fill="#4f46e5"/>
-                            <path d="M24 8V14M24 34V40M8 24H14M34 24H40M13 13L17.5 17.5M30.5 30.5L35 35M35 13L30.5 17.5M17.5 30.5L13 35" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
-                            <circle cx="24" cy="8" r="2.5" fill="#0284c7"/>
-                            <circle cx="24" cy="40" r="2.5" fill="#0284c7"/>
-                            <circle cx="8" cy="24" r="2.5" fill="#0284c7"/>
-                            <circle cx="40" cy="24" r="2.5" fill="#0284c7"/>
-                        </svg>
-                    </div>
-                    <h4>Technology</h4>
-                </div>
-
-                <!-- 2. FinTech -->
-                <div class="industry-card ind-fintech glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <path d="M24 6L38 12V22C38 31.5 32 39.5 24 43C16 39.5 10 31.5 10 22V12L24 6Z" fill="#10b981" fill-opacity="0.18" stroke="#10b981" stroke-width="2.5" stroke-linejoin="round"/>
-                            <path d="M18 28L24 21L29 25L34 18" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M29 18H34V23" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M24 28V34M21 31H27" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h4>FinTech</h4>
-                </div>
-
-                <!-- 3. Banking & Finance -->
-                <div class="industry-card ind-banking glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <rect x="9" y="10" width="30" height="30" rx="5" fill="#0284c7" fill-opacity="0.18" stroke="#0284c7" stroke-width="2.5"/>
-                            <circle cx="24" cy="25" r="9" stroke="#0369a1" stroke-width="2.5" fill="#ffffff"/>
-                            <circle cx="24" cy="25" r="3" fill="#0284c7"/>
-                            <path d="M24 16V18M24 32V34M15 25H17M31 25H33" stroke="#0284c7" stroke-width="2" stroke-linecap="round"/>
-                            <rect x="33" y="21" width="3" height="8" rx="1.5" fill="#0369a1"/>
-                        </svg>
-                    </div>
-                    <h4>Banking & Finance</h4>
-                </div>
-
-                <!-- 4. Healthcare (Vibrant Crimson Red Theme Kept) -->
-                <div class="industry-card ind-healthcare glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <path d="M24 39L21.5 36.6C12.5 28.4 6.5 23 6.5 16.2C6.5 10.7 10.8 6.5 16.2 6.5C19.3 6.5 22.2 7.9 24 10.2C25.8 7.9 28.7 6.5 31.8 6.5C37.2 6.5 41.5 10.7 41.5 16.2C41.5 23 35.5 28.4 26.5 36.6L24 39Z" fill="#ef4444" fill-opacity="0.2" stroke="#ef4444" stroke-width="2.5"/>
-                            <path d="M14 22H20L22.5 16L25.5 28L28.5 20L30.5 24H34" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h4>Healthcare</h4>
-                </div>
-
-                <!-- 5. Manufacturing -->
-                <div class="industry-card ind-manufacturing glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <path d="M10 38H22L26 26L18 18L10 38Z" fill="#64748b" fill-opacity="0.2" stroke="#475569" stroke-width="2.5" stroke-linejoin="round"/>
-                            <circle cx="34" cy="18" r="7" stroke="#334155" stroke-width="2.5" fill="#ffffff"/>
-                            <path d="M34 13V15M34 21V23M29 18H31M37 18H39" stroke="#334155" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M26 26L34 18" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
-                            <rect x="8" y="38" width="16" height="4" rx="2" fill="#475569"/>
-                        </svg>
-                    </div>
-                    <h4>Manufacturing</h4>
-                </div>
-
-                <!-- 6. Retail & E-commerce -->
-                <div class="industry-card ind-retail glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <path d="M10 12H15L19.5 28H34.5L38 16H18" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="21" cy="35" r="3" fill="#d97706"/>
-                            <circle cx="33" cy="35" r="3" fill="#d97706"/>
-                            <path d="M27 24C24.5 24 23 22 23 19.5C23 17 25 15 27.5 15C30 15 31.5 16.5 31.5 19H23" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M36 8L37.5 11L40.5 12.5L37.5 14L36 17L34.5 14L31.5 12.5L34.5 11L36 8Z" fill="#fbbf24"/>
-                        </svg>
-                    </div>
-                    <h4>Retail & E-commerce</h4>
-                </div>
-
-                <!-- 7. EdTech -->
-                <div class="industry-card ind-edtech glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <path d="M10 14C10 14 16 12 24 16C32 12 38 14 38 14V34C38 34 32 32 24 36C16 32 10 34 10 34V14Z" fill="#06b6d4" fill-opacity="0.2" stroke="#0891b2" stroke-width="2.5" stroke-linejoin="round"/>
-                            <path d="M24 16V36" stroke="#0891b2" stroke-width="2.5"/>
-                            <circle cx="24" cy="20" r="4" fill="#06b6d4" stroke="#0e7490" stroke-width="1.5"/>
-                            <path d="M24 24V27" stroke="#0e7490" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h4>EdTech</h4>
-                </div>
-
-                <!-- 8. Logistics -->
-                <div class="industry-card ind-logistics glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="16" width="22" height="18" rx="3" fill="#f59e0b" fill-opacity="0.2" stroke="#d97706" stroke-width="2.5"/>
-                            <path d="M13 16V34M19 16V34M25 16V34" stroke="#d97706" stroke-width="1.5"/>
-                            <path d="M28 25H38M38 25L33 20M38 25L33 30" stroke="#ea580c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M19 10V16" stroke="#b45309" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h4>Logistics</h4>
-                </div>
-
-                <!-- 9. Hospitality -->
-                <div class="industry-card ind-hospitality glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <rect x="12" y="14" width="24" height="26" rx="3" fill="#eab308" fill-opacity="0.2" stroke="#ca8a04" stroke-width="2.5"/>
-                            <rect x="17" y="19" width="4" height="4" rx="1" fill="#ca8a04"/>
-                            <rect x="27" y="19" width="4" height="4" rx="1" fill="#ca8a04"/>
-                            <rect x="17" y="27" width="4" height="4" rx="1" fill="#ca8a04"/>
-                            <rect x="27" y="27" width="4" height="4" rx="1" fill="#ca8a04"/>
-                            <path d="M21 40V34H27V40" fill="#ca8a04"/>
-                            <path d="M35 10C35 12.2 33.2 14 31 14C28.8 14 27 12.2 27 10" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="36" cy="9" r="3" fill="#fbbf24"/>
-                        </svg>
-                    </div>
-                    <h4>Hospitality</h4>
-                </div>
-
-                <!-- 10. Professional Services -->
-                <div class="industry-card ind-pro-services glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <rect x="12" y="8" width="24" height="32" rx="4" fill="#8b5cf6" fill-opacity="0.18" stroke="#7c3aed" stroke-width="2.5"/>
-                            <path d="M18 16H30M18 22H30M18 28H25" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M28 26L38 34" stroke="#6d28d9" stroke-width="3" stroke-linecap="round"/>
-                            <rect x="33" y="23" width="8" height="4" rx="1" transform="rotate(40 33 23)" fill="#6d28d9"/>
-                        </svg>
-                    </div>
-                    <h4>Professional Services</h4>
-                </div>
-
-                <!-- 11. Startups -->
-                <div class="industry-card ind-startups glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <path d="M24 6C24 6 34 12 34 26C34 30 31 34 31 34L24 30L17 34C17 34 14 30 14 26C14 12 24 6 24 6Z" fill="#ff5722" fill-opacity="0.22" stroke="#f4511e" stroke-width="2.5" stroke-linejoin="round"/>
-                            <circle cx="24" cy="19" r="4" fill="#ffffff" stroke="#f4511e" stroke-width="2"/>
-                            <path d="M21 34L24 42L27 34" stroke="#e65100" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13 28L8 31M35 28L40 31" stroke="#ffb74d" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h4>Startups</h4>
-                </div>
-
-                <!-- 12. Enterprise Organizations -->
-                <div class="industry-card ind-enterprise glow-card">
-                    <div class="ind-icon">
-                        <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
-                            <rect x="10" y="20" width="12" height="20" rx="2" fill="#475569" fill-opacity="0.2" stroke="#334155" stroke-width="2.5"/>
-                            <rect x="22" y="10" width="16" height="30" rx="2" fill="#334155" fill-opacity="0.18" stroke="#1e293b" stroke-width="2.5"/>
-                            <rect x="26" y="16" width="3" height="3" fill="#334155"/>
-                            <rect x="31" y="16" width="3" height="3" fill="#334155"/>
-                            <rect x="26" y="23" width="3" height="3" fill="#334155"/>
-                            <rect x="31" y="23" width="3" height="3" fill="#334155"/>
-                            <rect x="26" y="30" width="3" height="3" fill="#334155"/>
-                            <rect x="31" y="30" width="3" height="3" fill="#334155"/>
-                            <rect x="14" y="25" width="3" height="3" fill="#475569"/>
-                            <rect x="14" y="31" width="3" height="3" fill="#475569"/>
-                        </svg>
-                    </div>
-                    <h4>Enterprise Organizations</h4>
-                </div>
-            </div>
-            <div class="text-center mt-lg scroll-reveal fade-in-up delay-200">
-                <span class="ind-tag" style="font-size: .92rem; padding: .5rem 1.4rem; border-radius: 20px;">Many More...</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== WHY NEXLANCE ===== -->
-    <section id="why-choose" class="why-section">
-        <div class="container">
-            <div class="section-header scroll-reveal fade-in-up" style="margin-bottom: 2.5rem;">
-                <span class="section-tag">Why Nexlance</span>
-                <h2 class="section-title text-center" style="margin-bottom: 0;">Why Organizations Choose Nexlance</h2>
-            </div>
-            <div class="why-grid">
-                <!-- 1. Business-First Approach -->
-                <div class="why-card glow-card scroll-reveal fade-in-up">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <rect x="18" y="26" width="60" height="46" rx="8" fill="url(#bg_case)" stroke="#0284c7" stroke-width="2.5"/>
-                                <path d="M34 26V20C34 16.7 36.7 14 40 14H56C59.3 14 62 16.7 62 20V26" stroke="#0369a1" stroke-width="3" stroke-linecap="round"/>
-                                <rect x="30" y="34" width="8" height="12" rx="2" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-                                <rect x="58" y="34" width="8" height="12" rx="2" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-                                <path d="M26 56L40 44L52 50L70 30" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M60 30H70V40" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                <defs>
-                                    <linearGradient id="bg_case" x1="18" y1="26" x2="78" y2="72" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0284c7"/>
-                                        <stop offset="1" stop-color="#0369a1"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Business-First Approach</h3>
-                    <p>We align our services with your business metrics and commercial goals, not just operational KPIs.</p>
-                </div>
-
-                <!-- 2. Customized Workforce Solutions -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <rect x="12" y="20" width="72" height="44" rx="22" fill="url(#bg_dial)" stroke="#818cf8" stroke-width="2"/>
-                                <circle cx="30" cy="42" r="12" fill="#6366f1" stroke="#a5b4fc" stroke-width="2.5"/>
-                                <circle cx="30" cy="42" r="6" fill="#fbbf24"/>
-                                <path d="M30 42L36 36" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-                                <circle cx="66" cy="42" r="12" fill="#0d9488" stroke="#5eead4" stroke-width="2.5"/>
-                                <circle cx="66" cy="42" r="6" fill="#f59e0b"/>
-                                <path d="M66 42L60 36" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-                                <path d="M20 18C30 10 66 10 76 18" stroke="#a855f7" stroke-width="2.5" stroke-dasharray="4 4"/>
-                                <defs>
-                                    <linearGradient id="bg_dial" x1="12" y1="20" x2="84" y2="64" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#1e1b4b"/>
-                                        <stop offset="1" stop-color="#312e81"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Customized Workforce Solutions</h3>
-                    <p>No templates. Every engagement is designed around your specific workforce structure and growth stage.</p>
-                </div>
-
-                <!-- 3. Industry-Specific Expertise -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-200">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <ellipse cx="48" cy="62" rx="30" ry="12" fill="#06b6d4" fill-opacity="0.2" stroke="#0891b2" stroke-width="2"/>
-                                <path d="M48 50L53 62L48 74L43 62L48 50Z" fill="#0e7490"/>
-                                <path d="M36 62L48 67L60 62L48 57L36 62Z" fill="#22d3ee"/>
-                                <path d="M48 12L80 24L48 36L16 24L48 12Z" fill="#0f766e" stroke="#134e4a" stroke-width="2"/>
-                                <rect x="32" y="30" width="32" height="14" fill="#0f766e" stroke="#134e4a" stroke-width="1.5"/>
-                                <path d="M72 26V42" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
-                                <circle cx="72" cy="44" r="3" fill="#f59e0b"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Industry-Specific Expertise</h3>
-                    <p>Our specialists understand the compliance requirements and talent dynamics of your specific sector.</p>
-                </div>
-
-                <!-- 4. Compliance-Driven Services -->
-                <div class="why-card glow-card scroll-reveal fade-in-up">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <path d="M20 16C20 16 35 12 50 16V68C35 64 20 68 20 68V16Z" fill="#78350f" stroke="#451a03" stroke-width="2.5"/>
-                                <path d="M50 16C50 16 65 12 80 16V68C65 64 50 68 50 68V16Z" fill="#92400e" stroke="#451a03" stroke-width="2.5"/>
-                                <path d="M50 16V68" stroke="#fbbf24" stroke-width="3"/>
-                                <path d="M20 16L30 16M20 68L30 68M80 16L70 16M80 68L70 68" stroke="#f59e0b" stroke-width="2"/>
-                                <path d="M50 28L62 33V43C62 50 56 55 50 58C44 55 38 50 38 43V33L50 28Z" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
-                                <circle cx="50" cy="40" r="3" fill="#ffffff"/>
-                                <path d="M50 43V49M48 47H52" stroke="#ffffff" stroke-width="2"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Compliance-Driven Services</h3>
-                    <p>Zero risk. Every service is delivered with strict adherence to labor laws, regulatory, and data standards.</p>
-                </div>
-
-                <!-- 5. Scalable Business Support -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <rect x="18" y="44" width="14" height="26" rx="3" fill="url(#gold_bar1)" stroke="#b45309" stroke-width="2"/>
-                                <rect x="38" y="32" width="14" height="38" rx="3" fill="url(#gold_bar2)" stroke="#b45309" stroke-width="2"/>
-                                <rect x="58" y="18" width="14" height="52" rx="3" fill="url(#gold_bar3)" stroke="#b45309" stroke-width="2"/>
-                                <path d="M16 38L38 24L56 28L78 12" stroke="#ea580c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M68 12H78V22" stroke="#ea580c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                <defs>
-                                    <linearGradient id="gold_bar1" x1="18" y1="44" x2="32" y2="70" gradientUnits="userSpaceOnUse"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#d97706"/></linearGradient>
-                                    <linearGradient id="gold_bar2" x1="38" y1="32" x2="52" y2="70" gradientUnits="userSpaceOnUse"><stop stop-color="#f59e0b"/><stop offset="1" stop-color="#b45309"/></linearGradient>
-                                    <linearGradient id="gold_bar3" x1="58" y1="18" x2="72" y2="70" gradientUnits="userSpaceOnUse"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#d97706"/></linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Scalable Business Support</h3>
-                    <p>Scale your workforce and operational support dynamically — grow fast without operational bottlenecks.</p>
-                </div>
-
-                <!-- 6. Technology-Enabled Solutions -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-200">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <rect x="22" y="18" width="52" height="48" rx="8" fill="url(#chip_bg)" stroke="#b45309" stroke-width="2.5"/>
-                                <path d="M30 10V18M42 10V18M54 10V18M66 10V18M30 66V74M42 66V74M54 66V74M66 66V74M14 26H22M14 38H22M14 50H22M14 62H22M74 26H82M74 38H82M74 50H82M74 62H82" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
-                                <path d="M48 28C43.5 28 40 31.5 40 36C40 39.5 42 42.5 45 43.5V47H51V43.5C54 42.5 56 39.5 56 36C56 31.5 52.5 28 48 28Z" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
-                                <path d="M46 47H50M47 50H49" stroke="#b45309" stroke-width="2" stroke-linecap="round"/>
-                                <defs>
-                                    <linearGradient id="chip_bg" x1="22" y1="18" x2="74" y2="66" gradientUnits="userSpaceOnUse"><stop stop-color="#78350f"/><stop offset="1" stop-color="#451a03"/></linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Technology-Enabled Solutions</h3>
-                    <p>We integrate technology into every service touchpoint, making your operations smarter and faster.</p>
-                </div>
-
-                <!-- 7. Dedicated Account Management -->
-                <div class="why-card glow-card scroll-reveal fade-in-up">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <circle cx="48" cy="30" r="12" fill="url(#gold_avatar)" stroke="#b45309" stroke-width="2"/>
-                                <path d="M32 58C32 48 40 44 48 44C56 44 64 48 64 58V62H32V58Z" fill="url(#gold_avatar)" stroke="#b45309" stroke-width="2"/>
-                                <circle cx="20" cy="24" r="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-                                <circle cx="76" cy="24" r="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-                                <circle cx="28" cy="54" r="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-                                <circle cx="68" cy="54" r="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
-                                <path d="M26 24H36M60 24H70M34 50L40 44M62 50L56 44" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 3"/>
-                                <defs>
-                                    <linearGradient id="gold_avatar" x1="32" y1="18" x2="64" y2="62" gradientUnits="userSpaceOnUse"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#d97706"/></linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Dedicated Account Management</h3>
-                    <p>A dedicated team that understands your business deeply and ensures consistent, high-quality delivery.</p>
-                </div>
-
-                <!-- 8. Long-Term Partnership Approach -->
-                <div class="why-card glow-card scroll-reveal fade-in-up delay-100">
-                    <div class="why-card-top">
-                        <div class="why-graphic">
-                            <svg width="84" height="75" viewBox="0 0 96 84" fill="none">
-                                <path d="M30 42C20 42 16 30 28 26C38 22 58 62 68 58C80 54 76 42 66 42C56 42 36 22 28 26C20 30 20 54 30 58C40 62 58 22 68 26C78 30 76 42 66 42" stroke="url(#gold_inf)" stroke-width="6" stroke-linecap="round"/>
-                                <path d="M36 42L44 36L52 44L60 38" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 58C28 66 68 66 76 58" stroke="#d97706" stroke-width="2.5" stroke-linecap="round"/>
-                                <path d="M24 60L20 64M72 60L76 64M48 64V70" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
-                                <defs>
-                                    <linearGradient id="gold_inf" x1="16" y1="20" x2="80" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#fbbf24"/><stop offset="0.5" stop-color="#d97706"/><stop offset="1" stop-color="#b45309"/></linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3>Long-Term Partnership Approach</h3>
-                    <p>We invest in your long-term success. Our engagements evolve with your business, not just your current needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== NEXSCORE — PRODUCT SHOWCASE ===== -->
-    <section id="nexscore" class="nexscore-section">
-        <div class="container">
-            <div class="nexscore-inner" style="display: flex; flex-direction: column; align-items: center;">
-                <div class="nexscore-wrapper scroll-reveal fade-in-up" style="display: inline-flex; flex-direction: column; align-items: flex-end;">
-                    <h2 class="nexscore-headline" style="margin-bottom: 0.3rem;">
-                        Introducing <span class="gradient-text text-animate">Nexlance Product</span>
-                    </h2>
-                    <span class="launch-pill" style="font-size: 0.88rem; padding: .38rem 1.1rem; border-radius: 20px; align-self: flex-end; margin-right: 4px;"><i class="fa-solid fa-rocket"></i> Launching Soon</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== OUR APPROACH ===== -->
-    <section id="approach" class="approach-section">
-        <div class="container">
-            <div class="section-header scroll-reveal fade-in-up">
-                <span class="section-tag">Our Approach</span>
-                <h2 class="section-title text-center">A Structured Process That Delivers Results</h2>
-                <p class="section-desc text-center max-w-xl">
-                    A proven four-step framework that ensures every engagement delivers measurable business value.
-                </p>
-            </div>
-            <div class="timeline-container">
-                <div class="timeline-line"><div class="timeline-progress"></div></div>
-                <!-- Step 1: Understand -->
-                <div class="timeline-step scroll-reveal fade-in-up">
-                    <div class="timeline-marker">1</div>
-                    <div class="timeline-card glow-card">
-                        <div class="step-icon">
-                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                                <rect x="2" y="2" width="28" height="28" rx="8" fill="#6366f1" fill-opacity="0.15"/>
-                                <path d="M16 7C11.6 7 8 10.6 8 15C8 17.8 9.5 20.3 11.8 21.6L11.5 25H20.5L20.2 21.6C22.5 20.3 24 17.8 24 15C24 10.6 20.4 7 16 7Z" stroke="#4f46e5" stroke-width="2.2" stroke-linecap="round"/>
-                                <path d="M12 15C12 12.8 13.8 11 16 11" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M12 25H20M14 28H18" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h4 class="step-title">Understand</h4>
-                        <p>We begin by deeply understanding your business objectives, workforce requirements, and operational priorities.</p>
-                    </div>
-                </div>
-
-                <!-- Step 2: Strategize -->
-                <div class="timeline-step scroll-reveal fade-in-up">
-                    <div class="timeline-marker">2</div>
-                    <div class="timeline-card glow-card">
-                        <div class="step-icon">
-                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                                <circle cx="10" cy="10" r="3.5" fill="#0d9488"/>
-                                <circle cx="22" cy="9" r="3.5" fill="#0d9488"/>
-                                <circle cx="8" cy="20" r="3.5" fill="#0d9488"/>
-                                <circle cx="16" cy="16" r="4" fill="#14b8a6" stroke="#0f766e" stroke-width="1.5"/>
-                                <circle cx="23" cy="23" r="3.5" fill="#0d9488"/>
-                                <path d="M10 10L16 16M22 9L16 16M8 20L16 16M23 23L16 16" stroke="#0d9488" stroke-width="2.2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h4 class="step-title">Strategize</h4>
-                        <p>Our multidisciplinary experts design a customized solution tailored precisely to your organizational goals.</p>
-                    </div>
-                </div>
-
-                <!-- Step 3: Execute -->
-                <div class="timeline-step scroll-reveal fade-in-up">
-                    <div class="timeline-marker">3</div>
-                    <div class="timeline-card glow-card">
-                        <div class="step-icon">
-                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                                <path d="M9 13L16 7L23 13" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M23 19L16 25L9 19" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M13 9L19 23" stroke="#b45309" stroke-width="2.5" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h4 class="step-title">Execute</h4>
-                        <p>Our teams deliver solutions with precision, speed, and strict SLAs across recruitment, workforce, BPO, or recovery.</p>
-                    </div>
-                </div>
-
-                <!-- Step 4: Optimize -->
-                <div class="timeline-step scroll-reveal fade-in-up">
-                    <div class="timeline-marker">4</div>
-                    <div class="timeline-card glow-card">
-                        <div class="step-icon">
-                            <svg width="30" height="30" viewBox="0 0 32 32" fill="none">
-                                <rect x="7" y="19" width="4" height="8" rx="1" fill="#475569"/>
-                                <rect x="14" y="14" width="4" height="13" rx="1" fill="#475569"/>
-                                <rect x="21" y="9" width="4" height="18" rx="1" fill="#334155"/>
-                                <path d="M7 17L14 11L24 5" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M18 5H24V11" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h4 class="step-title">Optimize</h4>
-                        <p>We continuously evaluate outcomes and recommend improvements to ensure long-term, scalable success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA BANNER ===== -->
-    <section class="cta-section">
-        <div class="container cta-container">
-            <div class="cta-inner glow-card scroll-reveal fade-in-up">
-                <div class="cta-glow-decor"></div>
-                <h2>Let's Build the Future of Your Business Together</h2>
-                <p class="cta-sub">
-                    Whether you're scaling your team, optimizing operations, or preparing for your next growth phase.<br>Nexlance is ready to be your strategic partner.
-                </p>
-                <div class="cta-actions-group">
-                    <a href="#contact" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-                    <a href="https://wa.me/919035598876?text=Hello%20Nexlance,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
-                    <a href="mailto:Collab@nexlance.co.in" class="btn btn-email btn-lg"><i class="fa-regular fa-envelope"></i> Email Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info scroll-reveal fade-in-up">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Let's discuss how Nexlance can support your organization's growth.</h2>
-                    <p class="contact-desc">
-                        Our experts are ready to listen, strategize, and build tailored solutions for your organization. Reach out and let's build something great together.
-                    </p>
-                    <div class="contact-details-list">
-                        <div class="contact-item-box">
-                            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
-                            <div class="c-info">
-                                <span class="c-label">Email Us</span>
-                                <a href="mailto:Collab@nexlance.co.in" class="c-val">Collab@nexlance.co.in</a>
-                            </div>
-                        </div>
-                        <div class="contact-item-box">
-                            <div class="c-icon whatsapp-c-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                            <div class="c-info">
-                                <span class="c-label">WhatsApp Us</span>
-                                <a href="https://wa.me/919035598876?text=Hello%20Nexlance,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="c-val">+91 90355 98876</a>
-                            </div>
-                        </div>
-                        <div class="contact-item-box">
-                            <div class="c-icon"><i class="fa-solid fa-globe"></i></div>
-                            <div class="c-info">
-                                <span class="c-label">Website</span>
-                                <a href="https://www.nexlance.co.in" target="_blank" rel="noopener" class="c-val">www.nexlance.co.in</a>
-                            </div>
-                        </div>
-                        <div class="contact-item-box">
-                            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="c-info">
-                                <span class="c-label">Location</span>
-                                <span class="c-val">Electronic City, Bengaluru, Karnataka</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-container scroll-reveal fade-in-up delay-200">
-                    <div class="form-wrapper glow-card">
-                        <h3>Send Us a Message</h3>
-                        <form id="inquiry-form" class="inquiry-form">
-                            <div class="form-group-row">
-                                <div class="form-control-item">
-                                    <label for="c-name">Full Name *</label>
-                                    <input type="text" id="c-name" required placeholder="e.g., Jane Doe">
-                                </div>
-                                <div class="form-control-item">
-                                    <label for="c-email">Business Email *</label>
-                                    <input type="email" id="c-email" required placeholder="name@company.com">
-                                </div>
-                            </div>
-                            <div class="form-group-row">
-                                <div class="form-control-item">
-                                    <label for="c-phone">Phone Number</label>
-                                    <input type="tel" id="c-phone" placeholder="+91 98765 43210">
-                                </div>
-                                <div class="form-control-item">
-                                    <label for="c-company">Company Name</label>
-                                    <input type="text" id="c-company" placeholder="Your Company">
-                                </div>
-                            </div>
-                            <div class="form-control-item">
-                                <label for="c-service">Service Needed *</label>
-                                <select id="c-service" required>
-                                    <option value="" disabled selected>Select a Service</option>
-                                    <option value="HR & Workforce Solutions">HR & Workforce Solutions</option>
-                                    <option value="BPO Services">BPO Services</option>
-                                    <option value="Collections & Recovery Services">Collections & Recovery Services</option>
-                                    <option value="NexScore SaaS Platform">NexScore SaaS Platform</option>
-                                    <option value="General Partnership">General Partnership</option>
-                                </select>
-                            </div>
-                            <div class="form-control-item">
-                                <label for="c-msg">Message *</label>
-                                <textarea id="c-msg" rows="4" required placeholder="Tell us about your requirements..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-md">Submit Inquiry <i class="fa-solid fa-paper-plane ml-sm"></i></button>
-                        </form>
-                        <div class="form-success-overlay">
-                            <div class="success-content">
-                                <div class="success-icon"><i class="fa-solid fa-check"></i></div>
-                                <h4>Thank You!</h4>
-                                <p>Your message has been received. Our team will contact you shortly.</p>
-                                <button class="btn btn-outline btn-sm reset-form-btn">Send Another Message</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <a href="#" class="logo-group">
-                    <img src="assets/logo.png" alt="Nexlance Logo" class="logo-img">
-                </a>
-                <p class="brand-tagline">A Business Solutions Company. Empowering businesses through People, Process & Performance.</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/company/nexlance-innovations/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/nexlance.innovations/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/919035598876?text=Hello%20Nexlance,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-links-group">
-                <div class="footer-col">
-                    <h5>Services</h5>
-                    <ul>
-                        <li><a href="#services">HR & Workforce Solutions</a></li>
-                        <li><a href="#services">BPO Services</a></li>
-                        <li><a href="#services">Collections & Recovery</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Company</h5>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#contact">Careers</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h5>Contact</h5>
-                    <ul class="footer-contact-details">
-                        <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/919035598876?text=Hello%20Nexlance,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">+91 90355 98876</a></li>
-                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:Collab@nexlance.co.in">Collab@nexlance.co.in</a></li>
-                        <li><i class="fa-solid fa-location-dot"></i> Electronic City, Bengaluru</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container fb-container">
-                <p>&copy; 2026 Nexlance. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp Widget -->
-    <a href="https://wa.me/919035598876?text=Hello%20Nexlance,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span class="whatsapp-tooltip">Chat with us</span>
-    </a>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
