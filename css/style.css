@@ -274,30 +274,29 @@ ul { list-style: none; }
 
 /* --- Sub Navigation Row --- */
 .nav-sub {
-    background: rgba(31, 24, 88, 0.55);
-    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
 }
 .sub-container {
     display: flex; align-items: center; justify-content: flex-start;
-    gap: 2.2rem; height: 40px;
+    gap: 2.2rem; height: 42px;
     overflow-x: auto;
 }
 .sub-link {
-    font-size: 12.5px; font-weight: 500;
-    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px; font-weight: 700;
+    color: #0f172a;
     white-space: nowrap;
     position: relative; padding: 2px 0;
     transition: color 0.2s ease;
 }
 .sub-link::after {
     content: ''; position: absolute; bottom: -2px; left: 0;
-    width: 0; height: 2px;
+    width: 0; height: 2.5px;
     background: var(--grad);
     border-radius: 2px;
     transition: width 0.25s ease;
 }
-.sub-link:hover { color: #ffffff; }
+.sub-link:hover { color: var(--indigo); }
 .sub-link:hover::after { width: 100%; }
 
 /* Mobile Drawer (Glassmorphic Dark Theme) */
