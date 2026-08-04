@@ -268,16 +268,19 @@ ul { list-style: none; }
 
 /* Contact CTA */
 .nav-cta {
-    font-size: 13px; font-weight: 600;
-    color: #ffffff;
+    font-size: 13px; font-weight: 700;
+    color: var(--ink);
+    background: var(--grad);
     padding: 9px 22px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: none;
     border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(251, 198, 9, 0.3);
     transition: all 0.25s ease;
+    text-decoration: none;
 }
 .nav-cta:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(251, 198, 9, 0.5);
 }
 
 .nav-actions { display: flex; align-items: center; gap: 1rem; }
