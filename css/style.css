@@ -214,33 +214,20 @@ ul { list-style: none; }
 .logo-group {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
     text-decoration: none;
 }
 
-.logo-icon-img {
-    height: 48px;
-    width: auto;
-    max-width: 65px;
-    object-fit: contain;
-    filter: none; /* Original Logo Colors */
-    transition: transform var(--transition-fast);
-}
-
-.logo-wordmark-img {
-    height: 40px;
+.logo-img {
+    height: 44px;
     width: auto;
     max-width: 250px;
     object-fit: contain;
-    filter: none; /* Processed Pure White Wordmark */
+    filter: none;
     transition: transform var(--transition-fast);
 }
 
-.logo-group:hover .logo-icon-img {
-    transform: scale(1.08);
-}
-.logo-group:hover .logo-wordmark-img {
-    transform: scale(1.02);
+.logo-group:hover .logo-img {
+    transform: scale(1.03);
 }
 
 /* Toggle Switch */
