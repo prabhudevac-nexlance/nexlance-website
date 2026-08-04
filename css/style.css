@@ -213,18 +213,18 @@ ul { list-style: none; }
 
 .logo-group { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
 .logo-img {
-    height: 46px;
+    height: 48px;
     width: auto;
-    max-width: 180px;
+    max-width: 200px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    filter: none; /* Original Logo Color */
 }
 .logo-name {
-    font-size: 1.85rem;
-    font-weight: 800;
+    font-size: 1.8rem;
+    font-weight: 500;
     letter-spacing: -0.5px;
     color: #ffffff;
-    font-family: 'Outfit', var(--font-main), sans-serif;
+    font-family: 'Comfortaa', 'Outfit', var(--font-main), sans-serif;
     line-height: 1;
 }
 
