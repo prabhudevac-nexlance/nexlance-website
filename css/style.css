@@ -212,35 +212,22 @@ ul { list-style: none; }
 }
 
 .logo-group {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
     text-decoration: none;
-    line-height: 1;
-    gap: 0;
-    cursor: pointer;
 }
 
-.logo-text {
-    font-size: 2.15rem;
-    font-weight: 400;
-    color: #ffffff;
-    font-family: 'Comfortaa', 'Outfit', var(--font-main), sans-serif;
-    line-height: 1;
-    letter-spacing: -0.6px;
-    display: inline-block;
-}
-
-.logo-mark {
-    height: 38px;
+.logo-img {
+    height: 44px;
     width: auto;
+    max-width: 260px;
     object-fit: contain;
-    filter: brightness(0) invert(1);
-    margin: 0 -2px;
-    position: relative;
-    top: -1px;
-    display: inline-block;
-    vertical-align: middle;
+    filter: none;
+    transition: transform var(--transition-fast);
+}
+
+.logo-group:hover .logo-img {
+    transform: scale(1.02);
 }
 
 /* Toggle Switch */
