@@ -208,7 +208,7 @@ ul { list-style: none; }
 }
 .header-container {
     display: flex; align-items: center; justify-content: space-between;
-    height: 72px; gap: 2rem;
+    height: 64px; gap: 2rem;
 }
 
 .logo-group {
@@ -218,9 +218,9 @@ ul { list-style: none; }
 }
 
 .logo-img {
-    height: 44px;
+    height: 35px;
     width: auto;
-    max-width: 250px;
+    max-width: 190px;
     object-fit: contain;
     filter: none;
     transition: transform var(--transition-fast);
