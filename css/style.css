@@ -212,7 +212,7 @@ ul { list-style: none; }
 }
 
 .logo-group { display: flex; align-items: center; gap: .75rem; text-decoration: none; }
-.logo-img { height: 42px; width: auto; max-width: 180px; object-fit: contain; filter: brightness(0) invert(1); }
+.logo-img { height: 42px; width: auto; max-width: 180px; object-fit: contain; }
 
 /* Toggle Switch */
 .toggle {
