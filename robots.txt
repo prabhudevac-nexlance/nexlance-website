@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /favicon.ico
+Allow: /assets/
+Allow: /site.webmanifest
+
+Sitemap: https://nexlance.co.in/sitemap.xml
