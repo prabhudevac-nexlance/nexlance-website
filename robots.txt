@@ -4,4 +4,4 @@ Allow: /favicon.ico
 Allow: /assets/
 Allow: /site.webmanifest
 
-Sitemap: https://nexlance.co.in/sitemap.xml
+Sitemap: https://www.nexlance.co.in/sitemap.xml
